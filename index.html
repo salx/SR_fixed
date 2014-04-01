@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href='styles.css' rel='stylesheet'/>
+		<script src="d3/d3.v3/d3.v3.min.js"></script>
+		<script src="tip.js"></script>
+		<!--script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.min.js"></script-->
+	</head>
+	<body>
+		<div>
+			<ul class="navigation">
+        <li class="selected"><a href="geschlecht.html">Geschlecht</a></li>
+        <li><a href="gremien.html">Bestellungsgremien</a></li>
+        <li><a href="partei.html">Partei-Affinit&auml;t</a></li>
+			</ul>
+    </div>
+    <div class="content">
+			<div class="infocontent" id="infobox">
+        <div class="text geschlecht" >
+          <h2>7 Frauen, 28 Männer</h2>
+          <p>Von den 35 Mitgliedern des Stiftungsrates sind genau 20% Frauen. <br>Von den 7 Frauen kommen 5 von der SP&Ouml;,1 von der &Ouml;VP, 1 ist unabh&auml;ngig.<br>
+          Von den M&auml;nnern kommen 10 von der SP&Ouml;, 9 von der &Ouml;VP, 2 von der FP&Ouml;.</p>
+        </div>
+      </div>
+      <script src="geschlecht.js"></script>
+      <div class="infocontent2 hidden" id="infobox2">
+        <div class="text allgemein" >
+          <h2>Person ausw&auml;hlen</h2>
+          <p>Mit der Maus &uuml;ber die Kreissegmente fahren <br>Der Name der Person erscheint im mouse-over<br> Mit einem Klick erscheint die Information in der Infobox</p>
+        </div>
+        <div class="text berti hidden" >
+          <h2>Gerhard Berti</h2>
+          <p><img class="circular"src="pictures/berti.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text brem hidden" >
+          <h2>Andrea Brem</h2>
+          <p><img class="circular"src="pictures/brem.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text drozda hidden" >
+          <h2>Thomas Drozda</h2>
+          <p><img class="circular"src="pictures/drozda.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text embacher hidden" >
+          <h2>Wilfried Embacher</h2>
+          <p><img class="circular"src="pictures/embacher.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text ertl hidden" >
+          <h2>Rudolf Ertl</h2>
+          <p><img class="circular"src="pictures/ertl.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text hartig hidden" >
+          <h2>Alexander Hartig</h2>
+          <p><img class="circular"src="pictures/hartig.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text hauft hidden" >
+          <h2>Margit Hauft</h2>
+          <p><img class="circular"src="pictures/hauft.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text hoscher hidden" >
+          <h2>Dietmar Hoscher</h2>
+          <p><img class="circular"src="pictures/hoscher.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text jankovics hidden" >
+          <h2>Christiana Jankovics</h2>
+          <p><img class="circular"src="pictures/jankovics.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text jung hidden" >
+          <h2>Stefan Jung</h2>
+          <p><img class="circular"src="pictures/jung.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text kettner hidden" >
+          <h2>Norbert Kettner</h2>
+          <p><img class="circular"src="pictures/kettner.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text kirchberger hidden" >
+          <h2>Josef Kirchberger</h2>
+          <p><img class="circular"src="pictures/kirchberger.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text klinger hidden" >
+          <h2>Alberich Klinger</h2>
+          <p><img class="circular"src="pictures/klinger.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text koren hidden" >
+          <h2>Peter Koren</h2>
+          <p><img class="circular"src="pictures/koren.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text krainer hidden" >
+          <h2>Franz Krainer</h2>
+          <p><img class="circular"src="pictures/krainer.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text kueberl hidden" >
+          <h2>Franz K&uuml;berl</h2>
+          <p><img class="circular"src="pictures/kueberl.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text kulovits hidden" >
+          <h2>Brigitte Kulovits-Rupp</h2>
+          <p><img class="circular"src="pictures/kulovits.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text limbeck hidden" >
+          <h2>Matthias Limbeck</h2>
+          <p><img class="circular"src="pictures/limbeck.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text medwenitsch hidden" >
+          <h2>Franz Medwenitsch</h2>
+          <p><img class="circular"src="pictures/medwenitsch.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text meryn hidden" >
+          <h2>Siegfried Meryn</h2>
+          <p><img class="circular"src="pictures/meryn.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text meusburger hidden" >
+          <h2>Edelbert Meusburger</h2>
+          <p><img class="circular"src="pictures/meusburger.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text moser hidden" >
+          <h2>Gerhard Moser</h2>
+          <p><img class="circular"src="pictures/moser.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text muhm hidden" >
+          <h2>Werner Muhm</h2>
+          <p><img class="circular"src="pictures/muhm.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text neuschitzer hidden" >
+          <h2>Siggi Neuschitzer</h2>
+          <p><img class="circular"src="pictures/neuschitzer.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text resch hidden" >
+          <h2>Josef Resch</h2>
+          <p><img class="circular"src="pictures/resch.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text roesslhuber hidden" >
+          <h2>Rainer R&ouml;szlhuber</h2>
+          <p><img class="circular"src="pictures/roesslhuber.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text scheer hidden" >
+          <h2>Alexander Scheer</h2>
+          <p><img class="circular"src="pictures/scheer.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text schellner hidden" >
+          <h2>Andrea Schellner</h2>
+          <p><img class="circular"src="pictures/schellner.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text steger hidden" >
+          <h2>Norbert Steger</h2>
+          <p><img class="circular"src="pictures/steger.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text sundl hidden" >
+          <h2>Alois Sundl</h2>
+          <p><img class="circular"src="pictures/sundl.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text tischler hidden" >
+          <h2>Bernadette Tischler</h2>
+          <p><img class="circular"src="pictures/tischler.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text toetschinger hidden" >
+          <h2>Gerhard T&ouml;tschinger</h2>
+          <p><img class="circular"src="pictures/toetschinger.jpg" alt="berti"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text wimmer hidden" >
+          <h2>Beate Wimmer-Puchinger</h2>
+          <p><img class="circular"src="pictures/wimmer.jpg" alt="wimmer"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text zach hidden" >
+          <h2>Thomas Zach</h2>
+          <p><img class="circular"src="pictures/zach.jpg" alt="zach"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+        <div class="text ziegler hidden" >
+          <h2>Robert Ziegler</h2>
+          <p><img class="circular"src="pictures/ziegler.jpg" alt="zieglier"></img><br> SP&Ouml;-Mitglied seit 1874, <br>lebt und arbeitet in der Steiermark. <br> Geht jeden Sonntag in die Kirche. <br> Lieblingsspeise: Lachsfilet <br>Hobbies: Stricken, Sticken, Malen nach Zahlen</p>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

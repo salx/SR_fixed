@@ -1,0 +1,325 @@
+{
+  "name": "Stiftungsrat",
+  "value": 34,
+  "children": [
+    {
+      "name": "f",
+      "value": 7,
+      "children": [
+        {
+          "name": "Andrea Brem",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "f",
+          "info": "Geschäftsführerin Wiener Frauenhäuser",
+          "gremium": "Bundesregierung",
+          "id": "brem"
+        },
+        {
+          "name": "Andrea Schellner",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "f",
+          "info": "HFP Wirtschaftstreuhänder",
+          "gremium": "Bundesregierung",
+          "id": "schellner"
+        },
+        {
+          "name": "Brigitte Kulovits-Rupp",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "f",
+          "info": "Burgenland",
+          "gremium": "Bundeslaender",
+          "id": "kulovits"
+        },
+        {
+          "name": "Bernadette Tischler",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "f",
+          "info": "Konsumenten",
+          "gremium": "Publikumsrat",
+          "id": "tischler"
+        },
+        {
+          "name": "Beate Wimmer-Puchinger",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "f",
+          "info": "Hochschulen",
+          "gremium": "Publikumsrat",
+          "id": "wimmer"
+        },
+        {
+          "name": "Margit Hauft",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "f",
+          "info": "Oberösterreich",
+          "gremium": "Bundeslaender",
+          "id": "hauft"
+        },
+        {
+          "name": "Christiana Jankovics",
+          "value": 1,
+          "partei": "unabhängig",
+          "sex": "f",
+          "info": "Redakteurin",
+          "gremium": "Zentralbetriebsrat",
+          "id": "jankovics"
+        }
+      ]
+    },
+    {
+      "name": "m",
+      "value": 27,
+      "children": [
+        {
+          "name": "Peter Koren",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Vize-Generalsekretär IV",
+          "gremium": "Parteien",
+          "id": "koren"
+        },
+        {
+          "name": "Rudolf Ertl",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Vorstand Wiener Städtische",
+          "gremium": "Bundesregierung",
+          "id": "ertl"
+        },
+        {
+          "name": "Thomas Zach",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Management Staatsdruckerei",
+          "gremium": "Bundesregierung",
+          "id": "zach"
+        },
+        {
+          "name": "Dietmar Hoscher",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "test",
+          "gremium": "Parteien",
+          "id": "hoscher"
+        },
+        {
+          "name": "Werner Muhm",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Direktor AK Wien",
+          "gremium": "Parteien",
+          "id": "muhm"
+        },
+        {
+          "name": "Norbert Kettner",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Wien",
+          "gremium": "Bundeslaender",
+          "id": "kettner"
+        },
+        {
+          "name": "Alois Sundl",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Steiermark",
+          "gremium": "Bundeslaender",
+          "id": "sundl"
+        },
+        {
+          "name": "Josef Kirchberger",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Kunst",
+          "gremium": "Publikumsrat",
+          "id": "kirchberger"
+        },
+        {
+          "name": "Siegfried Meryn",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Eltern und Familien",
+          "gremium": "Publikumsrat",
+          "id": "meryn"
+
+        },
+        {
+          "name": "Gerhard Berti",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "freigestellter Betriebsrat",
+          "gremium": "Zentralbetriebsrat",
+          "id": "berti"
+        },
+        {
+          "name": "Franz Krainer",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Rechtsanwalt",
+          "gremium": "Bundesregierung",
+          "id": "krainer"
+        },
+        {
+          "name": "Franz Medwenitsch",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Geschäftsführer Verband der Musikwirtschafts und Verwertungsgesellschaften",
+          "gremium": "Bundesregierung",
+          "id": "medwenitsch"
+        },
+        {
+          "name": "Rainer Rößlhuber",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Generalsekretät Sportunion",
+          "gremium": "Bundesregierung",
+          "id": "roesslhuber"
+        },
+        {
+          "name": "Thomas Drozda",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Generaldirektor Vereinigte Bühnen Wien",
+          "gremium": "Bundesregierung",
+          "id": "drozda"
+        },
+        {
+          "name": "Alberich Klinger",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Niederösterreich",
+          "gremium": "Bundeslaender",
+          "id": "klinger"
+        },
+        {
+          "name": "Matthias Limbeck",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Salzburg",
+          "gremium": "Bundeslaender",
+          "id": "limbeck"
+        },
+        {
+          "name": "Edelbert Meusburger",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Vorarlberg",
+          "gremium": "Bundeslaender",
+          "id": "meusburger"
+        },
+        {
+          "name": "Josef Resch",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Tirol",
+          "gremium": "Bundeslaender",
+          "id": "resch"
+        },
+        {
+          "name": "Gerhard Tötschinger",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Ältere Menschen",
+          "gremium": "Publikumsrat",
+          "id": "toetschinger"
+        },
+        {
+          "name": "Norbert Steger",
+          "value": 1,
+          "partei": "FPÖ",
+          "sex": "m",
+          "info": "Rechtsanwalt",
+          "gremium": "Parteien",
+          "id": "steger"
+        },
+        {
+          "name": "Siggi Neuschitzer",
+          "value": 1,
+          "partei": "FPÖ",
+          "sex": "m",
+          "info": "Kärnten",
+          "gremium": "Bundeslaender",
+          "id": "neuschitzer"
+        },
+        {
+          "name": "Alexander Scheer",
+          "value": 1,
+          "partei": "BZÖ",
+          "sex": "m",
+          "info": "test",
+          "gremium": "Parteien",
+          "id": "scheer"
+        },
+        {
+          "name": "Franz Küberl",
+          "value": 1,
+          "partei": "unabhängig",
+          "sex": "m",
+          "info": "Religion",
+          "gremium": "Publikumsrat",
+          "id": "kueberl"
+        },
+        {
+          "name": "Stefan Jung",
+          "value": 1,
+          "partei": "unabhängig",
+          "sex": "m",
+          "info": "test",
+          "gremium": "Zentralbetriebsrat",
+          "id": "jung"
+        },
+        {
+          "name": "Gerhard Moser",
+          "value": 1,
+          "partei": "unabhängig",
+          "sex": "m",
+          "info": "Ö1 Literatur",
+          "gremium": "Zentralbetriebsrat",
+          "id": "moser"
+        },
+        {
+          "name": "Robert Ziegler",
+          "value": 1,
+          "partei": "unabhängig",
+          "sex": "m",
+          "info": "test",
+          "gremium": "Zentralbetriebsrat",
+          "id": "ziegler"
+        },
+        {
+          "name": "Alexander Hartig",
+          "value": 1,
+          "partei": "Krone",
+          "sex": "m",
+          "info": "Aufsichtsrat Turnauer-Imperium",
+          "gremium": "Bundesregierung",
+          "id": "hartig"
+        }
+      ]
+    }
+  ]
+}
