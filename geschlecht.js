@@ -29,11 +29,13 @@ var tip = d3.tip()
   .offset([-10, 0])
   .html( function(d){
     if( d.name === "f" ){
-      return "<text>Frauen </br> Zum Hineinzoomen klicken</text>"
+      return "<text>Frauen </br> Zum Hineinzoomen klicken</text>";
     }else if( d.name === "m" ){
-      return "<text>M&auml;nner</br> Zum Hineinzoomen klicken</text>"
+      return "<text>M&auml;nner</br> Zum Hineinzoomen klicken</text>";
+    }else if( d.depth === 2 ){
+      return tip.hide(); //sifu - wie kann man das "richtig" lösen. das stimmt so nicht, produziert einen Fehler auf der Konsole, macht aber was ich will (tip erscheint nicht.)
     }else{
-      return "<text><strong>"+d.name+":</br>"+d.partei+",</br>"+d.info+"</strong></text>"
+      return "<text><strong>"+d.name+":</br>"+d.partei+",</br>"+d.info+"</strong></text>";
     }
   });
 
@@ -99,7 +101,7 @@ d3.json("geschlecht.json", function(error, root) {
       .style("fill", function(d) { return d.fill; })
       .style("fill-opacity", function(d){
             if(d.depth===2){
-              return 0.03;
+              return 0.01;
             }else{
               return 1;
             }
