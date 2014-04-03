@@ -160,7 +160,7 @@ d3.json("gremien.json", function(error, root) {
       path.transition()
           .style("fill-opacity", function(d){
             if(d.depth===2){
-              return 0.03;
+              return 0.01;
             }else{
               return 1;
             }

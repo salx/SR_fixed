@@ -159,7 +159,7 @@ d3.json("partei.json", function(error, root) {
           .style("fill-opacity", 1)
           .style("fill-opacity", function(d){
             if(d.depth===2){
-              return 0.03;
+              return 0.01;
             }else{
               return 1;
             }
