@@ -84,10 +84,10 @@ d3.json("geschlecht.json", function(error, root) {
       .attr("r", radius / 3)
       .on("click", zoomOut);
 
-  center.append("title")
-      .text("zoom out");
+  //center.append("title")
+      //.text("zoom out");
 
-  center.append("image")
+  center.append("image") // wird nicht angezeigt. Format ändenr hilft nichts, x,y ändern auch nicht, kann geladen werden
           .attr("xlink:href", "icon_21902.svg")
           .attr("x", "-50px")
           .attr("y", "-50px")
