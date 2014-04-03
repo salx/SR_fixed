@@ -80,19 +80,39 @@ d3.json("geschlecht.json", function(error, root) {
 
   //svg.selectAll( '.center' ).remove();
 
+  /*we do element backgrounds using patterns :) <-- damnit i need to cut back on smiley usage..*/
+  /* you need to play with the x/y width values to get what you want..*/
+  svg.append("defs").append("pattern")
+      .attr("id", "centerBackground")
+      .attr("x", "0")
+      .attr("y", "0")
+      .attr("width", 1)
+      .attr("height", 1)
+      .attr("patternUnits", "objectBoundingBox")
+        .append("image") 
+          .attr("xlink:href", "icon_21902.svg")
+          .attr("x", 0)
+          .attr("y", 0)
+          .attr("width", 2*radius/3)
+          .attr("height", 2*radius/3);
+
   var center = svg.append("circle")
       .attr("r", radius / 3)
+      .style("fill","url(#centerBackground)")
       .on("click", zoomOut);
 
   //center.append("title")
       //.text("zoom out");
 
+  /*
   center.append("image") // wird nicht angezeigt. Format ändenr hilft nichts, x,y ändern auch nicht, kann geladen werden
           .attr("xlink:href", "icon_21902.svg")
           .attr("x", "-50px")
           .attr("y", "-50px")
           .attr("width", "100px")
           .attr("height", "100px");
+  */
+
 
   var path = svg.selectAll("path")
       .data(partition.nodes(root).slice(1))
