@@ -85,6 +85,11 @@ h3{
 	border-radius: 4px 4px 4px 4px;
 }
 
+.text2 {
+	position: relative;
+	align: top;
+}
+
 circle,
 path{
 	cursor: pointer;

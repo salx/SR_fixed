@@ -108,15 +108,17 @@ d3.json("geschlecht.json", function(error, root) {
           })
       .each(function(d) { this._current = updateArc(d); })
       //.on("click", zoomIn); //hier: Funktion für click
+      // so kommen alle personen nacheinander rein. Alternativ: Zeile 194
       .on("click", function(d){
           if(d.children){
             zoomIn(d);
             d3.select(".infocontent2").classed("hidden", false);
             d3.select(".text.allgemein").classed( "hidden", false);
           }else if(!d.children){
-            d3.select(".text.allgemein").classed( "hidden", true);
+            d3.select(".allgemein").classed( "hidden", true);
+            d3.selectAll(".text2").classed("hidden", true); // diesen handle an / ab um Personenbeschr. stehen zu lassen.
             //d3.selectAll(".infocontent2.text").classed( "hidden", true );
-            d3.select(".text." + d.id).classed( "hidden", false);
+            d3.select("." + d.id).classed( "hidden", false);
           }
         })
       .on("mouseover", tip.show )
@@ -133,8 +135,8 @@ d3.json("geschlecht.json", function(error, root) {
 
   function zoomOut(p) {
     if (!p.parent) return;
+    d3.selectAll(".text2").classed("hidden", true);//funkt aber nicht...wieso...
     d3.selectAll(".infocontent2").classed("hidden", true);
-    d3.selectAll(".infocontent2.text").classed("hidden", true);//funkt aber nicht...
     zoom(p.parent, p);
 
     /* Dieser Part produziert einen "not defined fehler"
@@ -192,11 +194,12 @@ d3.json("geschlecht.json", function(error, root) {
             if(d.children){
               zoomIn(d);
               d3.select(".infocontent2").classed("hidden", false);
-              d3.select(".text.allgemein").classed( "hidden", false);
+              d3.select(".allgemein").classed( "hidden", false);
             }else if(!d.children){
-              d3.select(".text.allgemein").classed( "hidden", true);
+              d3.select(".allgemein").classed( "hidden", true);
               //d3.selectAll(".infocontent2.text").classed( "hidden", true );
-              d3.select(".text." + d.id).classed( "hidden", false);
+              d3.selectAll(".text2").classed("hidden", true);// diesen handle an / ab um Personenbeschr. stehen zu lassen.
+              d3.select("." + d.id).classed( "hidden", false);
             }
           })
           .each(function(d) { this._current = enterArc(d); })
