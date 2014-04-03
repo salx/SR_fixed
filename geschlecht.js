@@ -134,7 +134,7 @@ d3.json("geschlecht.json", function(error, root) {
   function zoomOut(p) {
     if (!p.parent) return;
     d3.selectAll(".infocontent2").classed("hidden", true);
-    d3.selectAll(".infocontent2.text").classed("hidden", true);//funkt aber nicht...
+    d3.selectAll(".infocontent2 .text").classed("hidden", true);//du hast auch versucht elemente zu selecten die sowohl die infoconten2 als auch die text class haben.. whitespace :)
     zoom(p.parent, p);
 
     /* Dieser Part produziert einen "not defined fehler"
