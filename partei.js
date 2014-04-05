@@ -74,10 +74,7 @@ d3.json("partei.json", function(error, root) {
       .attr("r", radius / 3)
       .on("click", zoomOut);
 
-  center.append("title")
-      .text("zoom out");
-
-  center.append("text") // Wird nicht angezeigt...
+  svg.append("text") //tuste nicht in circle rein, sondern einfach dahinter? dann geht er
           .text("Stiftungsrat")
            .attr("x", - 45 );
 
