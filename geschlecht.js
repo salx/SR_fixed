@@ -24,63 +24,7 @@ var svg = d3.select(".content").append("svg")
     .append("g")
     .attr("transform", "translate(" + (margin.left-40) + "," + (margin.top-50) + ")");
 
-var tip = d3.tip()
-  .attr("class", "d3-tip")
-  .offset([17, 0])
-  .html( function(d){
-    if( d.name === "f" ){
-      return "<text>Frauen </br> Zum Hineinzoomen klicken</text>";
-    }else if( d.name === "m" ){
-      return "<text>M&auml;nner</br> Zum Hineinzoomen klicken</text>";
-    }else if( d.depth === 2 ){
-      return tip.hide(); //sifu - wie kann man das "richtig" lösen. das stimmt so nicht, produziert einen Fehler auf der Konsole, macht aber was ich will (tip erscheint nicht.)
-    }else{
-      return "<text><strong>"+d.name+":</br>"+d.partei+",</br>"+d.info+"</strong></text>";
-    }
-  });
-
-svg.call(tip);
-
-var partition = d3.layout.partition()
-    //.sort(function(a, b) { return d3.ascending(a.name, b.name); })
-    .size([2 * Math.PI, radius]);
-
-var arc = d3.svg.arc()
-    .startAngle( function(d){ return d.x; } )
-    .endAngle( function(d){ return d.x + d.dx - 0.01 / ( d.depth + 0.5 ); } )
-    .innerRadius( function(d){ return radius / 3 * d.depth; } )
-    .outerRadius( function(d){ return radius / ( 2 + d.depth ) * ( d.depth + 1 ) -1; } )
-
-/*
-var arc = d3.svg.arc()
-    .startAngle(function(d) { return d.x; })
-    .endAngle(function(d) { return d.x + d.dx - .01 / (d.depth + .5); })
-    .innerRadius(function(d) { return radius / 3 * d.depth; })
-    .outerRadius(function(d) { return radius / 3 * (d.depth + 1) - 1; });
-*/
-
-d3.json("geschlecht.json", function(error, root) {
-  // Compute the initial layout on the entire tree to sum sizes.
-  // Also compute the full name and fill color for each node,
-  // and stash the children so they can be restored as we descend.
-  partition
-      .value(function(d) { return d.value; })
-      .nodes(root)
-      .forEach(function(d) {
-        d._children = d.children;
-        d.sum = d.value;
-        d.key = key(d);
-        d.fill = fill(d);
-      });
-
-  // Now redefine the value function to use the previously-computed sum.
-  partition
-      .children(function(d, depth) { return depth < 2 ? d._children : null; })
-      .value(function(d) { return d.sum; });
-
-  //svg.selectAll( '.center' ).remove();
-
-  /*we do element backgrounds using patterns :) <-- damnit i need to cut back on smiley usage..*/
+/*we do element backgrounds using patterns :) <-- damnit i need to cut back on smiley usage..*/
   /* you need to play with the x/y width values to get what you want..*/
   svg.append("defs").append("pattern")
       .attr("id", "centerBackground")
@@ -126,6 +70,64 @@ d3.json("geschlecht.json", function(error, root) {
           .attr("width", 2*radius/4)
           .attr("height", 2*radius/4);
 
+var tip = d3.tip()
+  .attr("class", "d3-tip")
+  .offset([17, 0])
+  .html( function(d){
+    if( d.name === "f" ){
+      return "<text>Frauen </br> Zum Hineinzoomen klicken</text>";
+    }else if( d.name === "m" ){
+      return "<text>M&auml;nner</br> Zum Hineinzoomen klicken</text>";
+    }else if( d.depth === 2 ){
+      return tip.hide(); //sifu - wie kann man das "richtig" lösen. das stimmt so nicht, produziert einen Fehler auf der Konsole, macht aber was ich will (tip erscheint nicht.)
+    }else{
+      return "<text><strong>"+d.name+":</br>"+d.partei+",</br>"+d.info+"</strong></text>";
+    }
+  });
+
+svg.call(tip);
+
+var partition = d3.layout.partition()
+    //.sort(function(a, b) { return d3.ascending(a.name, b.name); })
+    .size([2 * Math.PI, radius]);
+
+var arc = d3.svg.arc()
+    .startAngle( function(d){ return d.x; } )
+    .endAngle( function(d){ return d.x + d.dx - 0.01 / ( d.depth + 0.5 ); } )
+    .innerRadius( function(d){ return radius / 3 * d.depth; } )
+    .outerRadius( function(d){ return radius / ( 2 + d.depth ) * ( d.depth + 1 ) -1; } )
+
+/*
+var arc = d3.svg.arc()
+    .startAngle(function(d) { return d.x; })
+    .endAngle(function(d) { return d.x + d.dx - .01 / (d.depth + .5); })
+    .innerRadius(function(d) { return radius / 3 * d.depth; })
+    .outerRadius(function(d) { return radius / 3 * (d.depth + 1) - 1; });
+*/
+
+d3.json("geschlecht.json", function(error, root) {
+  // Compute the initial layout on the entire tree to sum sizes.
+  // Also compute the full name and fill color for each node,
+  // and stash the children so they can be restored as we descend.
+  partition
+      .value(function(d) { return d.value; })
+      .nodes(root)
+      .forEach(function(d) {
+
+        d._children = d.children;
+        d.sum = d.value;
+        d.key = key(d);
+        d.fill = fill(d);
+      });
+
+  // Now redefine the value function to use the previously-computed sum.
+  partition
+      .children(function(d, depth) { return depth < 2 ? d._children : null; })
+      .value(function(d) { return d.sum; });
+
+  //svg.selectAll( '.center' ).remove();
+
+  
   var center = svg.append("circle")
       .attr("r", radius / 3)
       .style("fill","url(#centerBackground)")
