@@ -164,11 +164,16 @@ d3.json("geschlecht.json", function(error, root) {
       .on("mouseout", tip.hide);
 
   function zoomIn(p) {
+    var n = p.name;
     if (p.depth > 1) p = p.parent;
     if (!p.children) return;
     zoom(p, p);
-
-    center.style("fill","url(#centerBackgroundF)")
+    if( n === "f")
+      {
+        center.style("fill","url(#centerBackgroundF)")
+      }else if( n === "m" ){
+        center.style( "fill", "url(#centerBackgroundM)" )
+      }
     //center.select("image")
         //.remove();
   }
@@ -285,7 +290,7 @@ d3.json("geschlecht.json", function(error, root) {
       path.transition()
           .style("fill-opacity", function(d){
             if(d.depth===2){
-              return 0.01;
+              return 0.00;
             }else{
               return 1;
             }
