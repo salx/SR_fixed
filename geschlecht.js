@@ -1,22 +1,13 @@
+/*
+- First load latency of center image.
+- final texts & images
+- final styling (awaiting feedback)
+*/
+
 var margin = {top: 280, right: 280, bottom: 250, left: 280},
     radius = Math.min(margin.top, margin.right, margin.bottom, margin.left);
 
 var hue = d3.scale.category10();
-
-/*
-var luminance = d3.scale.sqrt()
-    .domain([0, 1e6])
-    .clamp(true)
-    .range([90, 20]);
-*/
-
-/*
-var svg = d3.select("body").append("svg")
-    .attr("width", margin.left + margin.right)
-    .attr("height", margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-*/
 
 var svg = d3.select(".content").append("svg")
     .attr("width", 500)
@@ -24,6 +15,7 @@ var svg = d3.select(".content").append("svg")
     .append("g")
     .attr("transform", "translate(" + (margin.left-40) + "," + (margin.top-50) + ")");
 
+// moved these parts on top, thinking it would help with latency - it doesn't, but well..
 /*we do element backgrounds using patterns :) <-- damnit i need to cut back on smiley usage..*/
   /* you need to play with the x/y width values to get what you want..*/
   svg.append("defs").append("pattern")
