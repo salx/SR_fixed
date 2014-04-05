@@ -91,10 +91,10 @@ d3.json("geschlecht.json", function(error, root) {
       .attr("patternUnits", "objectBoundingBox")
         .append("image") 
           .attr("xlink:href", "icon_21902.svg")
-          .attr("x", 0)
-          .attr("y", 0)
-          .attr("width", 2*radius/3)
-          .attr("height", 2*radius/3);
+          .attr("x", 20)
+          .attr("y", 15)
+          .attr("width", 2*radius/4)
+          .attr("height", 2*radius/4);
 
   var center = svg.append("circle")
       .attr("r", radius / 3)
@@ -103,16 +103,6 @@ d3.json("geschlecht.json", function(error, root) {
 
   //center.append("title")
       //.text("zoom out");
-
-  /*
-  center.append("image") // wird nicht angezeigt. Format ändenr hilft nichts, x,y ändern auch nicht, kann geladen werden
-          .attr("xlink:href", "icon_21902.svg")
-          .attr("x", "-50px")
-          .attr("y", "-50px")
-          .attr("width", "100px")
-          .attr("height", "100px");
-  */
-
 
   var path = svg.selectAll("path")
       .data(partition.nodes(root).slice(1))
