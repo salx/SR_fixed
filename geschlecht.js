@@ -96,6 +96,36 @@ d3.json("geschlecht.json", function(error, root) {
           .attr("width", 2*radius/4)
           .attr("height", 2*radius/4);
 
+//background female
+    svg.append("defs").append("pattern")
+      .attr("id", "centerBackgroundF")
+      .attr("x", "0")
+      .attr("y", "0")
+      .attr("width", 1)
+      .attr("height", 1)
+      .attr("patternUnits", "objectBoundingBox")
+        .append("image") 
+          .attr("xlink:href", "icon_25454.svg")
+          .attr("x", 20)
+          .attr("y", 15)
+          .attr("width", 2*radius/4)
+          .attr("height", 2*radius/4);
+  
+  // background male
+  svg.append("defs").append("pattern")
+      .attr("id", "centerBackgroundM")
+      .attr("x", "0")
+      .attr("y", "0")
+      .attr("width", 1)
+      .attr("height", 1)
+      .attr("patternUnits", "objectBoundingBox")
+        .append("image") 
+          .attr("xlink:href", "icon_25455.svg")
+          .attr("x", 20)
+          .attr("y", 15)
+          .attr("width", 2*radius/4)
+          .attr("height", 2*radius/4);
+
   var center = svg.append("circle")
       .attr("r", radius / 3)
       .style("fill","url(#centerBackground)")
@@ -111,7 +141,7 @@ d3.json("geschlecht.json", function(error, root) {
       .style("fill", function(d) { return d.fill; })
       .style("fill-opacity", function(d){
             if(d.depth===2){
-              return 0.01;
+              return 0.00;
             }else{
               return 1;
             }
@@ -127,7 +157,6 @@ d3.json("geschlecht.json", function(error, root) {
           }else if(!d.children){
             d3.select(".allgemein").classed( "hidden", true);
             d3.selectAll(".text2").classed("hidden", true); // diesen handle an / ab um Personenbeschr. stehen zu lassen.
-            //d3.selectAll(".infocontent2.text").classed( "hidden", true );
             d3.select("." + d.id).classed( "hidden", false);
           }
         })
@@ -139,16 +168,18 @@ d3.json("geschlecht.json", function(error, root) {
     if (!p.children) return;
     zoom(p, p);
 
-    center.select("image")
-        .remove();
+    center.style("fill","url(#centerBackgroundF)")
+    //center.select("image")
+        //.remove();
   }
 
   function zoomOut(p) {
     if (!p.parent) return;
+    center.style("fill","url(#centerBackground)")
     d3.selectAll(".text2").classed("hidden", true);//funkt aber nicht...wieso...
     d3.selectAll(".infocontent2").classed("hidden", true);
 
-    d3.selectAll(".infocontent2 .text").classed("hidden", true);//du hast auch versucht elemente zu selecten die sowohl die infoconten2 als auch die text class haben.. whitespace :)
+    //d3.selectAll(".infocontent2 .text").classed("hidden", true);//du hast auch versucht elemente zu selecten die sowohl die infoconten2 als auch die text class haben.. whitespace :)
 
     zoom(p.parent, p);
 
@@ -210,7 +241,6 @@ d3.json("geschlecht.json", function(error, root) {
               d3.select(".allgemein").classed( "hidden", false);
             }else if(!d.children){
               d3.select(".allgemein").classed( "hidden", true);
-              //d3.selectAll(".infocontent2.text").classed( "hidden", true );
               d3.selectAll(".text2").classed("hidden", true);// diesen handle an / ab um Personenbeschr. stehen zu lassen.
               d3.select("." + d.id).classed( "hidden", false);
             }
@@ -218,6 +248,7 @@ d3.json("geschlecht.json", function(error, root) {
           .each(function(d) { this._current = enterArc(d); })
           .on("mouseover", tip.show )
           .on("mouseout", tip.hide);
+
 
       /* - hier gibt's einen Fehler
       path.transition()
