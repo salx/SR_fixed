@@ -16,15 +16,6 @@
           "id": "brem"
         },
         {
-          "name": "Andrea Schellner",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "f",
-          "info": "HFP Wirtschaftstreuhänder",
-          "gremium": "Bundesregierung",
-          "id": "schellner"
-        },
-        {
           "name": "Brigitte Kulovits-Rupp",
           "value": 1,
           "partei": "SPÖ",
@@ -32,6 +23,15 @@
           "info": "Burgenland",
           "gremium": "Bundeslaender",
           "id": "kulovits"
+        },
+        {
+          "name": "Andrea Schellner",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "f",
+          "info": "HFP Wirtschaftstreuhänder",
+          "gremium": "Bundesregierung",
+          "id": "schellner"
         },
         {
           "name": "Bernadette Tischler",
@@ -75,14 +75,23 @@
       "name": "m",
       "value": 27,
       "children": [
-        {
-          "name": "Peter Koren",
+         {
+          "name": "Franz Medwenitsch",
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Vize-Generalsekretär IV",
-          "gremium": "Parteien",
-          "id": "koren"
+          "info": "Geschäftsführer Verband der Musikwirtschafts und Verwertungsgesellschaften",
+          "gremium": "Bundesregierung",
+          "id": "medwenitsch"
+        },
+        {
+          "name": "Thomas Drozda",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Generaldirektor Vereinigte Bühnen Wien",
+          "gremium": "Bundesregierung",
+          "id": "drozda"
         },
         {
           "name": "Rudolf Ertl",
@@ -94,15 +103,6 @@
           "id": "ertl"
         },
         {
-          "name": "Thomas Zach",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Management Staatsdruckerei",
-          "gremium": "Bundesregierung",
-          "id": "zach"
-        },
-        {
           "name": "Dietmar Hoscher",
           "value": 1,
           "partei": "SPÖ",
@@ -112,15 +112,6 @@
           "id": "hoscher"
         },
         {
-          "name": "Werner Muhm",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Direktor AK Wien",
-          "gremium": "Parteien",
-          "id": "muhm"
-        },
-        {
           "name": "Norbert Kettner",
           "value": 1,
           "partei": "SPÖ",
@@ -128,15 +119,6 @@
           "info": "Wien",
           "gremium": "Bundeslaender",
           "id": "kettner"
-        },
-        {
-          "name": "Alois Sundl",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Steiermark",
-          "gremium": "Bundeslaender",
-          "id": "sundl"
         },
         {
           "name": "Josef Kirchberger",
@@ -158,13 +140,41 @@
 
         },
         {
-          "name": "Gerhard Berti",
+          "name": "Werner Muhm",
           "value": 1,
           "partei": "SPÖ",
           "sex": "m",
-          "info": "freigestellter Betriebsrat",
-          "gremium": "Zentralbetriebsrat",
-          "id": "berti"
+          "info": "Direktor AK Wien",
+          "gremium": "Parteien",
+          "id": "muhm"
+        },
+        {
+          "name": "Alois Sundl",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Steiermark",
+          "gremium": "Bundeslaender",
+          "id": "sundl"
+        },
+        
+        {
+          "name": "Alberich Klinger",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Niederösterreich",
+          "gremium": "Bundeslaender",
+          "id": "klinger"
+        },
+        {
+          "name": "Peter Koren",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Vize-Generalsekretär IV",
+          "gremium": "Parteien",
+          "id": "koren"
         },
         {
           "name": "Franz Krainer",
@@ -176,42 +186,6 @@
           "id": "krainer"
         },
         {
-          "name": "Franz Medwenitsch",
-          "value": 1,
-          "partei": "ÖVP",
-          "sex": "m",
-          "info": "Geschäftsführer Verband der Musikwirtschafts und Verwertungsgesellschaften",
-          "gremium": "Bundesregierung",
-          "id": "medwenitsch"
-        },
-        {
-          "name": "Rainer Rößlhuber",
-          "value": 1,
-          "partei": "ÖVP",
-          "sex": "m",
-          "info": "Generalsekretät Sportunion",
-          "gremium": "Bundesregierung",
-          "id": "roesslhuber"
-        },
-        {
-          "name": "Thomas Drozda",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Generaldirektor Vereinigte Bühnen Wien",
-          "gremium": "Bundesregierung",
-          "id": "drozda"
-        },
-        {
-          "name": "Alberich Klinger",
-          "value": 1,
-          "partei": "ÖVP",
-          "sex": "m",
-          "info": "Niederösterreich",
-          "gremium": "Bundeslaender",
-          "id": "klinger"
-        },
-        {
           "name": "Matthias Limbeck",
           "value": 1,
           "partei": "ÖVP",
@@ -219,6 +193,15 @@
           "info": "Salzburg",
           "gremium": "Bundeslaender",
           "id": "limbeck"
+        },
+        {
+          "name": "Gerhard Berti",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "freigestellter Betriebsrat",
+          "gremium": "Zentralbetriebsrat",
+          "id": "berti"
         },
         {
           "name": "Edelbert Meusburger",
@@ -239,6 +222,15 @@
           "id": "resch"
         },
         {
+          "name": "Rainer Rößlhuber",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Generalsekretät Sportunion",
+          "gremium": "Bundesregierung",
+          "id": "roesslhuber"
+        },
+        {
           "name": "Gerhard Tötschinger",
           "value": 1,
           "partei": "ÖVP",
@@ -246,6 +238,15 @@
           "info": "Ältere Menschen",
           "gremium": "Publikumsrat",
           "id": "toetschinger"
+        },
+        {
+          "name": "Thomas Zach",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Management Staatsdruckerei",
+          "gremium": "Bundesregierung",
+          "id": "zach"
         },
         {
           "name": "Norbert Steger",

@@ -26,7 +26,7 @@ var svg = d3.select(".content").append("svg")
 
 var tip = d3.tip()
   .attr("class", "d3-tip")
-  .offset([-10, 0])
+  .offset([17, 0])
   .html( function(d){
     if( d.name === "f" ){
       return "<text>Frauen </br> Zum Hineinzoomen klicken</text>";
