@@ -6,25 +6,7 @@
       "name": "SPÖ",
       "value": 15,
       "children": [
-        {
-          "name": "Andrea Brem",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "f",
-          "info": "Geschäftsführerin Wiener Frauenhäuser",
-          "gremium": "Bundesregierung", 
-          "id": "brem"
-        },
-        {
-          "name": "Thomas Drozda",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Generaldirektor Vereinigte Bühnen Wien",
-          "gremium": "Bundesregierung",
-          "id": "drozda"
-        },
-        {
+         {
           "name": "Rudolf Ertl",
           "value": 1,
           "partei": "SPÖ",
@@ -32,42 +14,6 @@
           "info": "Vorstand Wiener Städtische",
           "gremium": "Bundesregierung",
           "id": "ertl"
-        },
-        {
-          "name": "Andrea Schellner",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "f",
-          "info": "HFP Wirtschaftstreuhänder",
-          "gremium": "Bundesregierung",
-          "id": "schellner"
-        },
-        {
-          "name": "Dietmar Hoscher",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "test",
-          "gremium": "Parteien",
-          "id": "hoscher"
-        },
-        {
-          "name": "Werner Muhm",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Direktor AK Wien",
-          "gremium": "Parteien",
-          "id": "muhm"
-        },
-        {
-          "name": "Norbert Kettner",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Wien",
-          "gremium": "Bundeslaender",
-          "id": "kettner"
         },
         {
           "name": "Brigitte Kulovits-Rupp",
@@ -79,31 +25,13 @@
           "id": "kulovits"
         },
         {
-          "name": "Alois Sundl",
+          "name": "Andrea Schellner",
           "value": 1,
           "partei": "SPÖ",
-          "sex": "m",
-          "info": "Steiermark",
-          "gremium": "Bundeslaender",
-          "id": "sundl"
-        },
-        {
-          "name": "Josef Kirchberger",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Kunst",
-          "gremium": "Publikumsrat",
-          "id": "kirchberger"
-        },
-        {
-          "name": "Siegfried Meryn",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Eltern und Familien",
-          "gremium": "Publikumsrat",
-          "id": "meryn"
+          "sex": "f",
+          "info": "HFP Wirtschaftstreuhänder",
+          "gremium": "Bundesregierung",
+          "id": "schellner"
         },
         {
           "name": "Bernadette Tischler",
@@ -131,7 +59,79 @@
           "info": "freigestellter Betriebsrat",
           "gremium": "Zentralbetriebsrat",
           "id": "berti"
-        }
+        },
+        {
+          "name": "Thomas Drozda",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Generaldirektor Vereinigte Bühnen Wien",
+          "gremium": "Bundesregierung",
+          "id": "drozda"
+        },
+        {
+          "name": "Andrea Brem",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "f",
+          "info": "Geschäftsführerin Wiener Frauenhäuser",
+          "gremium": "Bundesregierung", 
+          "id": "brem"
+        },
+        {
+          "name": "Dietmar Hoscher",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "test",
+          "gremium": "Parteien",
+          "id": "hoscher"
+        },
+        {
+          "name": "Norbert Kettner",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Wien",
+          "gremium": "Bundeslaender",
+          "id": "kettner"
+        },
+        {
+          "name": "Josef Kirchberger",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Kunst",
+          "gremium": "Publikumsrat",
+          "id": "kirchberger"
+        },
+        {
+          "name": "Siegfried Meryn",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Eltern und Familien",
+          "gremium": "Publikumsrat",
+          "id": "meryn"
+        },
+        {
+          "name": "Werner Muhm",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Direktor AK Wien",
+          "gremium": "Parteien",
+          "id": "muhm"
+        },
+        {
+          "name": "Alois Sundl",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Steiermark",
+          "gremium": "Bundeslaender",
+          "id": "sundl"
+        } 
       ]
     },
     {
@@ -139,40 +139,13 @@
       "value": 10,
       "children": [
         {
-          "name": "Franz Krainer",
+          "name": "Alberich Klinger",
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Rechtsanwalt",
-          "gremium": "Bundesregierung",
-          "id": "krainer"
-        },
-        {
-          "name": "Franz Medwenitsch",
-          "value": 1,
-          "partei": "ÖVP",
-          "sex": "m",
-          "info": "Geschäftsführer Verband der Musikwirtschafts und Verwertungsgesellschaften",
-          "gremium": "Bundesregierung",
-          "id": "medwenitsch"
-        },
-        {
-          "name": "Rainer Rößlhuber",
-          "value": 1,
-          "partei": "ÖVP",
-          "sex": "m",
-          "info": "Generalsekretät Sportunion",
-          "gremium": "Bundesregierung",
-          "id": "roesslhuber"
-        },
-        {
-          "name": "Peter Koren",
-          "value": 1,
-          "partei": "ÖVP",
-          "sex": "m",
-          "info": "Vize-Generalsekretär IV",
-          "gremium": "Parteien",
-          "id": "koren"
+          "info": "Niederösterreich",
+          "gremium": "Bundeslaender",
+          "id": "klinger"
         },
         {
           "name": "Margit Hauft",
@@ -184,13 +157,22 @@
           "id": "hauft"
         },
         {
-          "name": "Alberich Klinger",
+          "name": "Peter Koren",
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Niederösterreich",
-          "gremium": "Bundeslaender",
-          "id": "klinger"
+          "info": "Vize-Generalsekretär IV",
+          "gremium": "Parteien",
+          "id": "koren"
+        },
+        {
+          "name": "Franz Krainer",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Rechtsanwalt",
+          "gremium": "Bundesregierung",
+          "id": "krainer"
         },
         {
           "name": "Matthias Limbeck",
@@ -200,6 +182,15 @@
           "info": "Salzburg",
           "gremium": "Bundeslaender",
           "id": "limbeck"
+        }, 
+        {
+          "name": "Franz Medwenitsch",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Geschäftsführer Verband der Musikwirtschafts und Verwertungsgesellschaften",
+          "gremium": "Bundesregierung",
+          "id": "medwenitsch"
         },
         {
           "name": "Edelbert Meusburger",
@@ -209,7 +200,7 @@
           "info": "Vorarlberg",
           "gremium": "Bundeslaender",
           "id": "meusburger"
-        },
+        }, 
         {
           "name": "Josef Resch",
           "value": 1,
@@ -218,6 +209,15 @@
           "info": "Tirol",
           "gremium": "Bundeslaender",
           "id": "resch"
+        },
+        {
+          "name": "Rainer Rößlhuber",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Generalsekretät Sportunion",
+          "gremium": "Bundesregierung",
+          "id": "roesslhuber"
         },
         {
           "name": "Gerhard Tötschinger",
@@ -283,15 +283,6 @@
       "value": 5,
       "children": [
         {
-          "name": "Franz Küberl",
-          "value": 1,
-          "partei": "unabhängig",
-          "sex": "m",
-          "info": "Religion",
-          "gremium": "Publikumsrat",
-          "id": "kueberl"
-        },
-        {
           "name": "Christiana Jankovics",
           "value": 1,
           "partei": "unabhängig",
@@ -299,6 +290,14 @@
           "info": "Redakteurin",
           "gremium": "Zentralbetriebsrat",
           "id": "jankovics"
+        },{
+          "name": "Franz Küberl",
+          "value": 1,
+          "partei": "unabhängig",
+          "sex": "m",
+          "info": "Religion",
+          "gremium": "Publikumsrat",
+          "id": "kueberl"
         },
         {
           "name": "Stefan Jung",
