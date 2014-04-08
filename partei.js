@@ -75,8 +75,8 @@ d3.json("partei.json", function(error, root) {
       .on("click", zoomOut);
 
   svg.append("text") //tuste nicht in circle rein, sondern einfach dahinter? dann geht er
-          .text("Stiftungsrat")
-           .attr("x", - 45 );
+          .text("Parteien")
+          .attr("x", - 30 );
 
   var path = svg.selectAll("path")
       .data(partition.nodes(root).slice(1))
@@ -85,13 +85,23 @@ d3.json("partei.json", function(error, root) {
       .style("fill", function(d) { return d.fill; })
       .style("fill-opacity", function(d){
             if(d.depth===2){
-              return 0.01;
+              return 0.00;
             }else{
               return 1;
             }
           })
       .each(function(d) { this._current = updateArc(d); })
-      .on("click", zoomIn)
+      .on("click", function(d){
+        if(d.children){
+          zoomIn(d);
+          d3.select(".infocontent2").classed("hidden", false);
+          //d3.select(".text2.allgemein").classed( "hidden", false);
+        }else if(!d.children){
+          d3.select(".allgemein").classed( "hidden", true);
+          d3.selectAll(".text2").classed("hidden", true); // diesen handle an / ab um Personenbeschr. stehen zu lassen.
+          d3.select("." + d.id).classed( "hidden", false);
+        }
+      })
       .on("mouseover", tip.show )
       .on("mouseout", tip.hide);
 
@@ -99,11 +109,27 @@ d3.json("partei.json", function(error, root) {
     if (p.depth > 1) p = p.parent;
     if (!p.children) return;
     zoom(p, p);
+    d3.selectAll("text")
+      .text(function(d){
+        return p.name;
+        })
+      .attr("x", function(d){
+        if(p.name === "unabhängig"){
+          return -43;
+        }else{
+          return -20;
+        }
+      });
   }
 
   function zoomOut(p) {
     if (!p.parent) return;
     zoom(p.parent, p);
+    d3.selectAll(".text2").classed("hidden", true);
+    d3.selectAll(".infocontent2").classed("hidden", true);
+    d3.selectAll("text")
+      .text("Parteien")
+      .attr("x", - 30 );
   }
 
   // Zoom to the specified new root.
@@ -147,7 +173,17 @@ d3.json("partei.json", function(error, root) {
       path.enter().append("path")
           .style("fill-opacity", function(d) { return d.depth === 2 - (root === p) ? 1 : 0; })
           .style("fill", function(d) { return d.fill; })
-          .on("click", zoomIn)
+          .on("click", function(d){
+            if(d.children){
+              zoomIn(d);
+              d3.select(".infocontent2").classed("hidden", false);
+              d3.select(".text2.allgemein").classed( "hidden", false);
+            }else if(!d.children){
+              d3.select(".allgemein").classed( "hidden", true);
+              d3.selectAll(".text2").classed("hidden", true); // diesen handle an / ab um Personenbeschr. stehen zu lassen.
+              d3.select("." + d.id).classed( "hidden", false);
+            }
+          })
           .each(function(d) { this._current = enterArc(d); })
           .on("mouseover", tip.show )
           .on("mouseout", tip.hide);
@@ -187,8 +223,13 @@ function fill(d){
   }
   return colors[p.name];
   }else if(p.depth === 2){
-    var c = "#999";
-    return c;
+    //var c = "#999";
+    //return c;
+    var colors = {
+     'm': "#cfb725",
+     'f': "#30b68f",
+    }
+    return colors[p.sex];
   }
 }
 

@@ -105,7 +105,7 @@ d3.json("gremien.json", function(error, root) {
       .style("fill", function(d) { return d.fill; })
       .style("fill-opacity", function(d){
             if(d.depth===2){
-              return 0.01;
+              return 0.00;
             }else{
               return 1;
             }
@@ -128,8 +128,13 @@ d3.json("gremien.json", function(error, root) {
   function zoomIn(p) {
     if (p.depth > 1) p = p.parent;
     if (!p.children) return;
-    zoom(p, p);
+    
     center.style("fill", "none");
+    center.append("text") // funkt prizipiell. Ist im DOM, aber nicht sichtbar, wieso?
+      .text(function(d){ return p.name })
+      .attr("x", 50)
+      .attr("y", 50);
+    zoom(p, p);
   }
 
   function zoomOut(p) {
@@ -199,7 +204,7 @@ d3.json("gremien.json", function(error, root) {
       path.transition()
           .style("fill-opacity", function(d){
             if(d.depth===2){
-              return 0.01;
+              return 0.00;
             }else{
               return 1;
             }
