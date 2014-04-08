@@ -12,7 +12,8 @@
           "partei": "SPÖ",
           "sex": "f",
           "info": "Geschäftsführerin Wiener Frauenhäuser",
-          "gremium": "Bundesregierung"
+          "gremium": "Bundesregierung",
+          "id": "brem"
         },
         {
           "name": "Thomas Drozda",
@@ -20,7 +21,8 @@
           "partei": "SPÖ",
           "sex": "m",
           "info": "Generaldirektor Vereinigte Bühnen Wien",
-          "gremium": "Bundesregierung"
+          "gremium": "Bundesregierung",
+          "id": "drozda"
         },
         {
           "name": "Rudolf Ertl",
@@ -28,7 +30,8 @@
           "partei": "SPÖ",
           "sex": "m",
           "info": "Vorstand Wiener Städtische",
-          "gremium": "Bundesregierung"
+          "gremium": "Bundesregierung",
+          "id": "ertl"
         },
         {
           "name": "Andrea Schellner",
@@ -36,15 +39,8 @@
           "partei": "SPÖ",
           "sex": "f",
           "info": "HFP Wirtschaftstreuhänder",
-          "gremium": "Bundesregierung"
-        },
-        {
-          "name": "Thomas Zach",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Management Staatsdruckerei",
-          "gremium": "Bundesregierung"
+          "gremium": "Bundesregierung",
+          "id": "schellner"
         },
         {
           "name": "Franz Krainer",
@@ -52,7 +48,8 @@
           "partei": "ÖVP",
           "sex": "m",
           "info": "Rechtsanwalt",
-          "gremium": "Bundesregierung"
+          "gremium": "Bundesregierung",
+          "id": "krainer"
         },
         {
           "name": "Franz Medwenitsch",
@@ -60,7 +57,8 @@
           "partei": "ÖVP",
           "sex": "m",
           "info": "Geschäftsführer Verband der Musikwirtschafts und Verwertungsgesellschaften",
-          "gremium": "Bundesregierung"
+          "gremium": "Bundesregierung",
+          "id": "medwenitsch"
         },
         {
           "name": "Rainer Rößlhuber",
@@ -68,7 +66,17 @@
           "partei": "ÖVP",
           "sex": "m",
           "info": "Generalsekretät Sportunion",
-          "gremium": "Bundesregierung"
+          "gremium": "Bundesregierung",
+          "id": "roesslhuber"
+        },
+        {
+          "name": "Thomas Zach",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Management Staatsdruckerei",
+          "gremium": "Bundesregierung",
+          "id": "zach"
         },
         {
           "name": "Alexander Hartig",
@@ -76,7 +84,8 @@
           "partei": "Krone",
           "sex": "m",
           "info": "Aufsichtsrat Turnauer-Imperium",
-          "gremium": "Bundesregierung"
+          "gremium": "Bundesregierung",
+          "id": "hartig"
         }
       ]
     },
@@ -90,7 +99,8 @@
           "partei": "SPÖ",
           "sex": "m",
           "info": "test",
-          "gremium": "Parteien"
+          "gremium": "Parteien",
+          "id": "hoscher"
         },
         {
           "name": "Werner Muhm",
@@ -98,7 +108,8 @@
           "partei": "SPÖ",
           "sex": "m",
           "info": "Direktor AK Wien",
-          "gremium": "Parteien"
+          "gremium": "Parteien",
+          "id": "muhm"
         },
         {
           "name": "Peter Koren",
@@ -106,7 +117,8 @@
           "partei": "ÖVP",
           "sex": "m",
           "info": "Vize-Generalsekretär IV",
-          "gremium": "Parteien"
+          "gremium": "Parteien",
+          "id": "koren"
         },
         {
           "name": "Norbert Steger",
@@ -114,7 +126,8 @@
           "partei": "FPÖ",
           "sex": "m",
           "info": "Rechtsanwalt",
-          "gremium": "Parteien"
+          "gremium": "Parteien",
+          "id": "steger"
         },
         {
           "name": "Alexander Scheer",
@@ -122,7 +135,8 @@
           "partei": "BZÖ",
           "sex": "m",
           "info": "test",
-          "gremium": "Parteien"
+          "gremium": "Parteien",
+          "id": "scheer"
         }
       ]
     },
@@ -136,7 +150,8 @@
           "partei": "SPÖ",
           "sex": "m",
           "info": "Wien",
-          "gremium": "Bundeslaender"
+          "gremium": "Bundeslaender",
+          "id": "kettner"
         },
         {
           "name": "Brigitte Kulovits-Rupp",
@@ -144,7 +159,8 @@
           "partei": "SPÖ",
           "sex": "f",
           "info": "Burgenland",
-          "gremium": "Bundeslaender"
+          "gremium": "Bundeslaender",
+          "id": "kulovits"
         },
         {
           "name": "Alois Sundl",
@@ -152,7 +168,8 @@
           "partei": "SPÖ",
           "sex": "m",
           "info": "Steiermark",
-          "gremium": "Bundeslaender"
+          "gremium": "Bundeslaender",
+          "id": "sundl"
         },
         {
           "name": "Margit Hauft",
@@ -160,7 +177,8 @@
           "partei": "ÖVP",
           "sex": "f",
           "info": "Oberösterreich",
-          "gremium": "Bundeslaender"
+          "gremium": "Bundeslaender",
+          "id": "hauft"
         },
         {
           "name": "Alberich Klinger",
@@ -168,7 +186,8 @@
           "partei": "ÖVP",
           "sex": "m",
           "info": "Niederösterreich",
-          "gremium": "Bundeslaender"
+          "gremium": "Bundeslaender",
+          "id": "klinger"
         },
         {
           "name": "Matthias Limbeck",
@@ -176,7 +195,8 @@
           "partei": "ÖVP",
           "sex": "m",
           "info": "Salzburg",
-          "gremium": "Bundeslaender"
+          "gremium": "Bundeslaender",
+          "id": "limbeck"
         },
         {
           "name": "Edelbert Meusburger",
@@ -192,7 +212,8 @@
           "partei": "ÖVP",
           "sex": "m",
           "info": "Tirol",
-          "gremium": "Bundeslaender"
+          "gremium": "Bundeslaender",
+          "id": "resch"
         },
         {
           "name": "Siggi Neuschitzer",
@@ -200,7 +221,8 @@
           "partei": "FPÖ",
           "sex": "m",
           "info": "Kärnten",
-          "gremium": "Bundeslaender"
+          "gremium": "Bundeslaender",
+          "id": "neuschitzer"
         }
       ]
     },
@@ -214,7 +236,8 @@
           "partei": "SPÖ",
           "sex": "m",
           "info": "Kunst",
-          "gremium": "Publikumsrat"
+          "gremium": "Publikumsrat",
+          "id": "kirchberger"
         },
         {
           "name": "Siegfried Meryn",
@@ -222,7 +245,8 @@
           "partei": "SPÖ",
           "sex": "m",
           "info": "Eltern und Familien",
-          "gremium": "Publikumsrat"
+          "gremium": "Publikumsrat",
+          "id": "meryn"
         },
         {
           "name": "Bernadette Tischler",
@@ -230,7 +254,8 @@
           "partei": "SPÖ",
           "sex": "f",
           "info": "Konsumenten",
-          "gremium": "Publikumsrat"
+          "gremium": "Publikumsrat",
+          "id": "tischler"
         },
         {
           "name": "Beate Wimmer-Puchinger",
@@ -238,7 +263,8 @@
           "partei": "SPÖ",
           "sex": "f",
           "info": "Hochschulen",
-          "gremium": "Publikumsrat"
+          "gremium": "Publikumsrat",
+          "id": "wimmer"
         },
         {
           "name": "Gerhard Tötschinger",
@@ -246,7 +272,8 @@
           "partei": "ÖVP",
           "sex": "m",
           "info": "Ältere Menschen",
-          "gremium": "Publikumsrat"
+          "gremium": "Publikumsrat",
+          "id": "toetschinger"
         },
         {
           "name": "Franz Küberl",
@@ -254,7 +281,8 @@
           "partei": "unabhängig",
           "sex": "m",
           "info": "Religion",
-          "gremium": "Publikumsrat"
+          "gremium": "Publikumsrat",
+          "id": "kueberl"
         }
       ]
     },
@@ -268,7 +296,8 @@
           "partei": "SPÖ",
           "sex": "m",
           "info": "freigestellter Betriebsrat",
-          "gremium": "Zentralbetriebsrat"
+          "gremium": "Zentralbetriebsrat",
+          "id": "berti"
         },
         {
           "name": "Christiana Jankovics",
@@ -276,7 +305,8 @@
           "partei": "unabhängig",
           "sex": "f",
           "info": "Redakteurin",
-          "gremium": "Zentralbetriebsrat"
+          "gremium": "Zentralbetriebsrat",
+          "id": "jankovics"
         },
         {
           "name": "Stefan Jung",
@@ -284,7 +314,8 @@
           "partei": "unabhängig",
           "sex": "m",
           "info": "test",
-          "gremium": "Zentralbetriebsrat"
+          "gremium": "Zentralbetriebsrat",
+          "id": "jung"
         },
         {
           "name": "Gerhard Moser",
@@ -292,7 +323,8 @@
           "partei": "unabhängig",
           "sex": "m",
           "info": "Ö1 Literatur",
-          "gremium": "Zentralbetriebsrat"
+          "gremium": "Zentralbetriebsrat",
+          "id": "moser"
         },
         {
           "name": "Robert Ziegler",
@@ -300,7 +332,8 @@
           "partei": "unabhängig",
           "sex": "m",
           "info": "test",
-          "gremium": "Zentralbetriebsrat"
+          "gremium": "Zentralbetriebsrat",
+          "id": "ziegler"
         }
       ]
     }

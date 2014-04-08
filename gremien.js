@@ -23,6 +23,20 @@ var svg = d3.select(".content").append("svg")
     .append("g")
     .attr("transform", "translate(" + (margin.left-40) + "," + (margin.top-50) + ")");
 
+svg.append("defs").append("pattern")
+  .attr("id", "centerBackground")
+  .attr("x", 0)
+  .attr("y", 0)
+  .attr("width", 1)
+  .attr("height", 1)
+  .attr("patternUnits", "objectBoundingBox")
+    .append("image")
+    .attr("xlink:href", "icon_39558.svg")
+    .attr("x", 23)
+    .attr("y", 41)
+    .attr("width", 2*radius/5)
+    .attr("height", 2*radius/5);
+
 var tip = d3.tip()
   .attr("class", "d3-tip")
   .offset([-10, 0])
@@ -78,10 +92,11 @@ d3.json("gremien.json", function(error, root) {
 
   var center = svg.append("circle")
       .attr("r", radius / 3)
+      .style("fill", "url(#centerBackground)")
       .on("click", zoomOut);
 
   center.append("title")
-      .text("zoom out");
+      .text("ORF Stiftungsrat - Bestellgremien");
 
   var path = svg.selectAll("path")
       .data(partition.nodes(root).slice(1))
@@ -96,7 +111,17 @@ d3.json("gremien.json", function(error, root) {
             }
           })
       .each(function(d) { this._current = updateArc(d); })
-      .on("click", zoomIn)
+      .on("click", function(d){
+        if(d.children){
+          zoomIn(d);
+          d3.select(".infocontent2").classed("hidden", false);
+          //d3.select(".text2.allgemein").classed( "hidden", false);
+        }else if(!d.children){
+          d3.select(".allgemein").classed( "hidden", true);
+          d3.selectAll(".text2").classed("hidden", true); // diesen handle an / ab um Personenbeschr. stehen zu lassen.
+          d3.select("." + d.id).classed( "hidden", false);
+        }
+      })
       .on("mouseover", tip.show )
       .on("mouseout", tip.hide);
 
@@ -104,11 +129,15 @@ d3.json("gremien.json", function(error, root) {
     if (p.depth > 1) p = p.parent;
     if (!p.children) return;
     zoom(p, p);
+    center.style("fill", "none");
   }
 
   function zoomOut(p) {
     if (!p.parent) return;
     zoom(p.parent, p);
+    center.style("fill", "url(#centerBackground)");
+    d3.selectAll(".text2").classed("hidden", true);
+    d3.selectAll(".infocontent2").classed("hidden", true);
   }
 
   // Zoom to the specified new root.
@@ -152,7 +181,17 @@ d3.json("gremien.json", function(error, root) {
       path.enter().append("path")
           .style("fill-opacity", function(d) { return d.depth === 2 - (root === p) ? 1 : 0; })
           .style("fill", function(d) { return d.fill; })
-          .on("click", zoomIn)
+          .on("click", function(d){
+            if(d.children){
+              zoomIn(d);
+              d3.select(".infocontent2").classed("hidden", false);
+              d3.select(".text2.allgemein").classed( "hidden", false);
+            }else if(!d.children){
+              d3.select(".allgemein").classed( "hidden", true);
+              d3.selectAll(".text2").classed("hidden", true); // diesen handle an / ab um Personenbeschr. stehen zu lassen.
+              d3.select("." + d.id).classed( "hidden", false);
+            }
+          })
           .each(function(d) { this._current = enterArc(d); })
           .on("mouseover", tip.show )
           .on("mouseout", tip.hide);
