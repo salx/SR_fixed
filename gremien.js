@@ -98,6 +98,10 @@ d3.json("gremien.json", function(error, root) {
   center.append("title")
       .text("ORF Stiftungsrat - Bestellgremien");
 
+  svg.append("text") //tuste nicht in circle rein, sondern einfach dahinter? dann geht er
+          .text("")
+          .attr("x", - 30 );
+
   var path = svg.selectAll("path")
       .data(partition.nodes(root).slice(1))
     .enter().append("path")
@@ -130,10 +134,22 @@ d3.json("gremien.json", function(error, root) {
     if (!p.children) return;
     
     center.style("fill", "none");
-    center.append("text") // funkt prizipiell. Ist im DOM, aber nicht sichtbar, wieso?
+    d3.selectAll("text") // funkt prizipiell. Ist im DOM, aber nicht sichtbar, wieso?
       .text(function(d){ return p.name })
-      .attr("x", 50)
-      .attr("y", 50);
+      .attr("x", function(d){
+        if(p.name === "Bundesregierung"){
+          return -62;
+        }else if(p.name === "Bundeslaender" ){
+          return -55;
+        }else if( p.name === "Publikumsrat" ){
+          return -45;
+        }else if( p.name === "Parteien"){
+          return -30;
+        }else if( p.name === "Zentralbetriebsrat" ){
+          return -62;
+        }
+      })
+      .attr("y", 0);
     zoom(p, p);
   }
 
@@ -143,6 +159,7 @@ d3.json("gremien.json", function(error, root) {
     center.style("fill", "url(#centerBackground)");
     d3.selectAll(".text2").classed("hidden", true);
     d3.selectAll(".infocontent2").classed("hidden", true);
+    d3.selectAll("text").text("");
   }
 
   // Zoom to the specified new root.

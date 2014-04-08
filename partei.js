@@ -74,6 +74,9 @@ d3.json("partei.json", function(error, root) {
       .attr("r", radius / 3)
       .on("click", zoomOut);
 
+  center.append("title")
+      .text("ORF Stiftungsrat - Parteien");
+
   svg.append("text") //tuste nicht in circle rein, sondern einfach dahinter? dann geht er
           .text("Parteien")
           .attr("x", - 30 );
