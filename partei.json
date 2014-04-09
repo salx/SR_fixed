@@ -264,6 +264,21 @@
       ]
     },
     {
+      "name": "Grüne",
+      "value": 1,
+      "children": [
+        {
+          "name": "Wilfried Embacher",
+          "value": 1,
+          "partei": "Grüne",
+          "sex": "m",
+          "info": "Rechtsanwalt",
+          "gremium": "Parteien",
+          "id": "embacher"
+        }
+      ]
+    },
+    {
       "name": "BZÖ",
       "value": 1,
       "children": [
@@ -275,21 +290,6 @@
           "info": "test",
           "gremium": "Parteien",
           "id": "scheer"
-        }
-      ]
-    },
-    {
-      "name": "Grüne",
-      "value": 1,
-      "children": [
-        {
-          "name": "Wilfried Embacher",
-          "value": 1,
-          "partei": "Grüne",
-          "sex": "m",
-          "info": "Rechtsanwalt",
-          "gremium": "Bundesregierung",
-          "id": "embacher"
         }
       ]
     },
