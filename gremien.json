@@ -79,6 +79,15 @@
           "id": "zach"
         },
         {
+          "name": "Wilfried Embacher",
+          "value": 1,
+          "partei": "Grüne",
+          "sex": "m",
+          "info": "Rechtsanwalt",
+          "gremium": "Bundesregierung",
+          "id": "embacher"
+        },
+        {
           "name": "Alexander Hartig",
           "value": 1,
           "partei": "Krone",

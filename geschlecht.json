@@ -195,15 +195,6 @@
           "id": "limbeck"
         },
         {
-          "name": "Gerhard Berti",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "freigestellter Betriebsrat",
-          "gremium": "Zentralbetriebsrat",
-          "id": "berti"
-        },
-        {
           "name": "Edelbert Meusburger",
           "value": 1,
           "partei": "ÖVP",
@@ -211,6 +202,15 @@
           "info": "Vorarlberg",
           "gremium": "Bundeslaender",
           "id": "meusburger"
+        },
+        {
+          "name": "Gerhard Berti",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "freigestellter Betriebsrat",
+          "gremium": "Zentralbetriebsrat",
+          "id": "berti"
         },
         {
           "name": "Josef Resch",
@@ -265,6 +265,15 @@
           "info": "Kärnten",
           "gremium": "Bundeslaender",
           "id": "neuschitzer"
+        },
+        {
+          "name": "Wilfried Embacher",
+          "value": 1,
+          "partei": "Grüne",
+          "sex": "m",
+          "info": "Rechtsanwalt",
+          "gremium": "Bundesregierung",
+          "id": "embacher"
         },
         {
           "name": "Alexander Scheer",

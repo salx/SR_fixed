@@ -279,6 +279,21 @@
       ]
     },
     {
+      "name": "Grüne",
+      "value": 1,
+      "children": [
+        {
+          "name": "Wilfried Embacher",
+          "value": 1,
+          "partei": "Grüne",
+          "sex": "m",
+          "info": "Rechtsanwalt",
+          "gremium": "Bundesregierung",
+          "id": "embacher"
+        }
+      ]
+    },
+    {
       "name": "unabhängig",
       "value": 5,
       "children": [
