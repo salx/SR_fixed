@@ -70,6 +70,8 @@ var arc = d3.svg.arc()
     .outerRadius(function(d) { return radius / 3 * (d.depth + 1) - 1; });
 */
 
+var l;
+
 d3.json("gremien.json", function(error, root) {
 
   // Compute the initial layout on the entire tree to sum sizes.
@@ -119,7 +121,9 @@ d3.json("gremien.json", function(error, root) {
         if(d.children){
           zoomIn(d);
           d3.select(".infocontent2").classed("hidden", false);
-          //d3.select(".text2.allgemein").classed( "hidden", false);
+          d3.selectAll(".list").classed("inactive", true);
+          d3.selectAll("." + d.name).classed("black", true);
+          l = d.name;
         }else if(!d.children){
           d3.select(".allgemein").classed( "hidden", true);
           d3.selectAll(".text2").classed("hidden", true); // diesen handle an / ab um Personenbeschr. stehen zu lassen.
@@ -132,7 +136,6 @@ d3.json("gremien.json", function(error, root) {
   function zoomIn(p) {
     if (p.depth > 1) p = p.parent;
     if (!p.children) return;
-    
     center.style("fill", "none");
     d3.selectAll("text") // funkt prizipiell. Ist im DOM, aber nicht sichtbar, wieso?
       .text(function(d){ return p.name })
@@ -160,6 +163,7 @@ d3.json("gremien.json", function(error, root) {
     d3.selectAll(".text2").classed("hidden", true);
     d3.selectAll(".infocontent2").classed("hidden", true);
     d3.selectAll("text").text("");
+    d3.selectAll(".list").classed("inactive", false);
   }
 
   // Zoom to the specified new root.
@@ -208,6 +212,10 @@ d3.json("gremien.json", function(error, root) {
               zoomIn(d);
               d3.select(".infocontent2").classed("hidden", false);
               d3.select(".text2.allgemein").classed( "hidden", false);
+              d3.selectAll("." + l).classed("black", false);
+              d3.selectAll(".list").classed("inactive", true);
+              d3.selectAll("." + d.name).classed("black", "true");
+              l = d.name;
             }else if(!d.children){
               d3.select(".allgemein").classed( "hidden", true);
               d3.selectAll(".text2").classed("hidden", true); // diesen handle an / ab um Personenbeschr. stehen zu lassen.

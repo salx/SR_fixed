@@ -244,6 +244,14 @@ svg {
 	display: none
 }
 
+.inactive{
+color: #999;
+}
+
+.black{
+	color: #000;
+}
+
 .circular {
 	width: 90px;
 	border-radius: 2px;
