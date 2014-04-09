@@ -64,7 +64,7 @@ var svg = d3.select(".content").append("svg")
 
 var tip = d3.tip()
   .attr("class", "d3-tip")
-  .offset([17, 0])
+  .offset([-3, 20])
   .html( function(d){
     if( d.name === "f" ){
       return "<text>Frauen </br> Zum Hineinzoomen klicken</text>";
@@ -148,6 +148,12 @@ d3.json("geschlecht.json", function(error, root) {
             zoomIn(d);
             d3.select(".infocontent2").classed("hidden", false);
             d3.select(".text.allgemein").classed( "hidden", false);
+            //d3.selectAll(".hide").classed("hidden", true);
+            if(d.name === "f"){
+                d3.selectAll(".m").classed("hidden", true);
+              }else if(d.name === "m"){
+                d3.selectAll(".f").classed("hidden", true);
+              }
           }else if(!d.children){
             d3.select(".allgemein").classed( "hidden", true);
             d3.selectAll(".text2").classed("hidden", true); // diesen handle an / ab um Personenbeschr. stehen zu lassen.
@@ -177,6 +183,9 @@ d3.json("geschlecht.json", function(error, root) {
     center.style("fill","url(#centerBackground)")
     d3.selectAll(".text2").classed("hidden", true);//funkt aber nicht...wieso...
     d3.selectAll(".infocontent2").classed("hidden", true);
+    d3.selectAll(".f").classed("hidden", false);
+    d3.selectAll(".m").classed("hidden", false);
+
 
     //d3.selectAll(".infocontent2 .text").classed("hidden", true);//du hast auch versucht elemente zu selecten die sowohl die infoconten2 als auch die text class haben.. whitespace :)
 
@@ -238,6 +247,11 @@ d3.json("geschlecht.json", function(error, root) {
               zoomIn(d);
               d3.select(".infocontent2").classed("hidden", false);
               d3.select(".allgemein").classed( "hidden", false);
+              if(d.name === "f"){
+                d3.selectAll(".m").classed("hidden", true);
+              }else if(d.name === "m"){
+                d3.selectAll(".f").classed("hidden", true);
+              }
             }else if(!d.children){
               d3.select(".allgemein").classed( "hidden", true);
               d3.selectAll(".text2").classed("hidden", true);// diesen handle an / ab um Personenbeschr. stehen zu lassen.
