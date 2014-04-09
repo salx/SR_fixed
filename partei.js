@@ -98,6 +98,7 @@ d3.json("partei.json", function(error, root) {
         if(d.children){
           zoomIn(d);
           d3.select(".infocontent2").classed("hidden", false);
+          d3.select(".hide").classed("hidden", true);
           //d3.select(".text2.allgemein").classed( "hidden", false);
         }else if(!d.children){
           d3.select(".allgemein").classed( "hidden", true);
@@ -128,6 +129,7 @@ d3.json("partei.json", function(error, root) {
   function zoomOut(p) {
     if (!p.parent) return;
     zoom(p.parent, p);
+    d3.select(".hide").classed("hidden", false);
     d3.selectAll(".text2").classed("hidden", true);
     d3.selectAll(".infocontent2").classed("hidden", true);
     d3.selectAll("text")
@@ -179,6 +181,7 @@ d3.json("partei.json", function(error, root) {
           .on("click", function(d){
             if(d.children){
               zoomIn(d);
+              d3.select(".hide").classed("hidden", true);
               d3.select(".infocontent2").classed("hidden", false);
               d3.select(".text2.allgemein").classed( "hidden", false);
             }else if(!d.children){
