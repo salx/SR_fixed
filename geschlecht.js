@@ -146,6 +146,7 @@ d3.json("geschlecht.json", function(error, root) {
             zoomIn(d);
             d3.select(".infocontent2").classed("hidden", false);
             d3.select(".text.allgemein").classed( "hidden", false);
+            d3.select(".i").classed("hidden", true);
             d3.select(".icon1").classed( "hidden", true);
             d3.select(".icon2").classed( "hidden", true);
             //d3.selectAll(".hide").classed("hidden", true);
@@ -183,6 +184,7 @@ d3.json("geschlecht.json", function(error, root) {
     center.style("fill","url(#centerBackground)")
     d3.selectAll(".text2").classed("hidden", true);//funkt aber nicht...wieso...
     d3.selectAll(".infocontent2").classed("hidden", true);
+    d3.select(".i").classed("hidden", false);
     d3.selectAll(".f").classed("hidden", false);
     d3.selectAll(".m").classed("hidden", false);
     d3.select(".icon1").classed( "hidden", false);
@@ -249,6 +251,7 @@ d3.json("geschlecht.json", function(error, root) {
               zoomIn(d);
               d3.select(".infocontent2").classed("hidden", false);
               d3.select(".allgemein").classed( "hidden", false);
+              d3.select(".i").classed("hidden", true);
               d3.select(".icon1").classed( "hidden", true);
               d3.select(".icon2").classed( "hidden", true);
               if(d.name === "f"){
