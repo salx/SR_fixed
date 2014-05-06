@@ -3,13 +3,6 @@ var margin = {top: 280, right: 280, bottom: 250, left: 280},
 
 var hue = d3.scale.category10();
 
-/*
-var luminance = d3.scale.sqrt()
-    .domain([0, 1e6])
-    .clamp(true)
-    .range([90, 20]);
-*/
-
 var svg = d3.select(".content").append("svg")
     .attr("width", 500)
     .attr("height", 500)
@@ -23,7 +16,7 @@ var tip = d3.tip()
     if( d.children ){
       return "<text>" + d.name +"</br> Zum Hineinzoomen klicken</text>"
     }else if( d.depth === 2 ){
-      return tip.hide(); //sifu - wie kann man das "richtig" lösen. das stimmt so nicht, produziert einen Fehler auf der Konsole, macht aber was ich will (tip erscheint nicht.)
+      return tip.hide(); // wie kann man das "richtig" lösen. das stimmt so nicht, produziert einen Fehler auf der Konsole, macht aber was ich will (tip erscheint nicht.)
     }else{
       return "<text><strong>"+d.name+":</br>"+d.partei+",</br>"+d.info+"</strong></text>"
     }
@@ -120,6 +113,8 @@ d3.json("partei.json", function(error, root) {
       .attr("x", function(d){
         if(p.name === "unabhängig"){
           return -43;
+        }else if(p.name === "Team Stronach"){
+          return -52;
         }else{
           return -20;
         }
@@ -224,8 +219,8 @@ function fill(d){
      'FPÖ': 'blue',
      'Grüne': 'green',
      'Team Stronach': 'yellow',
-      'unabhängig': '#999',
-      'Neos': 'magenta'
+     'unabhängig': '#999',
+     'Neos': 'magenta'
   }
   return colors[p.name];
   }else if(p.depth === 2){
