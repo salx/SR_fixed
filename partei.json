@@ -20,7 +20,7 @@
           "value": 1,
           "partei": "SPÖ",
           "sex": "m",
-          "info": "Vorstand Wiener Städtische",
+          "info": "ehem. Vorstand Wiener Städtische",
           "gremium": "Bundesregierung",
           "id": "ertl"
         },
@@ -33,12 +33,21 @@
           "gremium": "Bundesregierung",
           "id": "gutierrez"
         },
+         {
+          "name": "Stefan Jung",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "ORF-ZiB",
+          "gremium": "Zentralbetriebsrat",
+          "id": "jung"
+        },
         {
           "name": "Brigitte Kulovits-Rupp",
           "value": 1,
           "partei": "SPÖ",
           "sex": "f",
-          "info": "Burgenland",
+          "info": "AK Burgenland",
           "gremium": "Bundeslaender",
           "id": "kulovits"
         },
@@ -56,7 +65,7 @@
           "value": 1,
           "partei": "SPÖ",
           "sex": "m",
-          "info": "freigestellter Betriebsrat",
+          "info": "ORF-Technik",
           "gremium": "Zentralbetriebsrat",
           "id": "berti"
         },
@@ -74,7 +83,7 @@
           "value": 1,
           "partei": "SPÖ",
           "sex": "m",
-          "info": "test",
+          "info": "Vortandsdirektor Casinos Austria",
           "gremium": "Parteien",
           "id": "hoscher"
         },
@@ -83,7 +92,7 @@
           "value": 1,
           "partei": "SPÖ",
           "sex": "m",
-          "info": "Wien",
+          "info": "Wien-Tourismus Chef",
           "gremium": "Bundeslaender",
           "id": "kettner"
         },
@@ -101,7 +110,7 @@
           "value": 1,
           "partei": "SPÖ",
           "sex": "m",
-          "info": "Eltern und Familien",
+          "info": "Prof. f. Innere Medizin",
           "gremium": "Publikumsrat",
           "id": "meryn"
         },
@@ -110,7 +119,7 @@
           "value": 1,
           "partei": "SPÖ",
           "sex": "m",
-          "info": "Steiermark",
+          "info": "ehem. Generaldirektor Merkur-Versicherungen, Steiermark",
           "gremium": "Bundeslaender",
           "id": "sundl"
         }, {
@@ -118,7 +127,7 @@
           "value": 1,
           "partei": "SPÖ",
           "sex": "f",
-          "info": "AK",
+          "info": "Arbeiterkammer",
           "gremium": "Publikumsrat",
           "id": "zimmer"
         } 
@@ -142,7 +151,7 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Vorarlberg",
+          "info": "Jurist und Betriebswirt, Vorarlberg",
           "gremium": "Bundeslaender",
           "id": "geismayr"
         },
@@ -151,7 +160,7 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "f",
-          "info": "Oberösterreich",
+          "info": "Katholische Aktion Oberösterreich",
           "gremium": "Bundeslaender",
           "id": "hauft"
         },
@@ -160,7 +169,7 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Zukunftsfonds",
+          "info": "Geschäftsführer Zukunftsfonds",
           "gremium": "Bundesregierung",
           "id": "hoesele"
         },
@@ -169,7 +178,7 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Niederösterreich",
+          "info": "Gründer NÖ Landesakademie",
           "gremium": "Bundeslaender",
           "id": "klinger"
         },
@@ -178,7 +187,7 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Salzburg",
+          "info": "GF Reed Messe, Salzburg",
           "gremium": "Bundeslaender",
           "id": "limbeck"
         }, 
@@ -187,7 +196,7 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Hilfswerk",
+          "info": "Geschäftsführer Hilfswerk",
           "gremium": "Publikumsrat",
           "id": "marschitz"
         },
@@ -196,7 +205,7 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Geschäftsführer Verband der Musikwirtschafts und Verwertungsgesellschaften",
+          "info": "GF Verband d. Musikwirtschafts- & Verwertungsgesellschaften",
           "gremium": "Bundesregierung",
           "id": "medwenitsch"
         },
@@ -205,12 +214,12 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Tirol",
+          "info": "Kulturmanager, Tirol",
           "gremium": "Bundeslaender",
           "id": "resch"
         },
         {
-          "name": "Rainer Rößlhuber",
+          "name": "Rainer Rösslhuber",
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
@@ -223,7 +232,7 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "f",
-          "info": "Österreichwerbung",
+          "info": "Österreich Werbung",
           "gremium": "Publikumsrat",
           "id": "stolba"
         },
@@ -232,7 +241,7 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Management Staatsdruckerei",
+          "info": "Unternehmensberater",
           "gremium": "Parteien",
           "id": "zach"
         },
@@ -265,7 +274,7 @@
           "value": 1,
           "partei": "FPÖ",
           "sex": "m",
-          "info": "Kärnten",
+          "info": "Babyhotelier, Kärnten",
           "gremium": "Bundeslaender",
           "id": "neuschitzer"
         }
@@ -333,18 +342,9 @@
           "value": 1,
           "partei": "unabhängig",
           "sex": "m",
-          "info": "Religion",
+          "info": "ehem Caritas-Chef",
           "gremium": "Publikumsrat",
           "id": "kueberl"
-        },
-        {
-          "name": "Stefan Jung",
-          "value": 1,
-          "partei": "unabhängig",
-          "sex": "m",
-          "info": "test",
-          "gremium": "Zentralbetriebsrat",
-          "id": "jung"
         },
         {
           "name": "Gerhard Moser",
