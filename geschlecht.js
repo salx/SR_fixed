@@ -13,7 +13,7 @@ var svg = d3.select(".content").append("svg")
     .attr("width", 350)
     .attr("height", 450)
     .append("g")
-    .attr("transform", "translate(" + (margin.left-70) + "," + (margin.top-60) + ")");
+    .attr("transform", "translate(" + (margin.left-70) + "," + (margin.top-25) + ")");
     //.attr("transform", "translate(" + (margin.left-40) + "," + (margin.top-50) + ")");
 
   svg.append("defs").append("pattern")
