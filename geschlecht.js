@@ -55,8 +55,8 @@ var svg = d3.select(".content").append("svg")
       .attr("patternUnits", "objectBoundingBox")
         .append("image") 
           .attr("xlink:href", "icon_42245_m.svg")
-          .attr("x", 20)
-          .attr("y", 15)
+          .attr("x", 18)
+          .attr("y", 23)
           .attr("width", 2*radius/4)
           .attr("height", 2*radius/4);
 
