@@ -131,6 +131,7 @@ h3{
 #infobox2{
 	/*background-color: #dd2;*/
 	width: 300px;
+	min-height: 200px;
 	margin-top: 15px;
 	padding: 10px 18px; 
 	/*float: left;*/
@@ -257,14 +258,19 @@ color: #999;
 	width: 90px;
 	border-radius: 2px;
 	margin-bottom: 15px;
-	margin-top: 15px;
+	padding-left: 10px;
 	float: right;
 }
 
-.circular1 {
-	width: 90px;
-	border-radius: 2px;
-	margin-bottom: 15px;
-	margin-top: -40px;
-	float: right;
+.icon1{
+	width: 50px;
+	position: absolute;
+	top: 130px;
+	left: 500px;
+}
+.icon2{
+	width: 60px;
+	position: absolute;
+	top: 130px;
+	left: 500px;
 }

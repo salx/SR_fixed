@@ -15,9 +15,6 @@ var svg = d3.select(".content").append("svg")
     .append("g")
     .attr("transform", "translate(" + (margin.left-40) + "," + (margin.top-50) + ")");
 
-// moved these parts on top, thinking it would help with latency - it doesn't, but well..
-/*we do element backgrounds using patterns :) <-- damnit i need to cut back on smiley usage..*/
-  /* you need to play with the x/y width values to get what you want..*/
   svg.append("defs").append("pattern")
       .attr("id", "centerBackground")
       .attr("x", "0")
