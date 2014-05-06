@@ -29,7 +29,7 @@
           "value": 1,
           "partei": "SPÖ",
           "sex": "m",
-          "info": "Vorstand Wiener Städtische",
+          "info": "ehem. Vorstand Wiener Städtische",
           "gremium": "Bundesregierung",
           "id": "ertl"
         },
@@ -56,7 +56,7 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Zukunftsfonds",
+          "info": "Geschäftsführer Zukunftsfonds",
           "gremium": "Bundesregierung",
           "id": "hoesele"
         },
@@ -65,16 +65,16 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Geschäftsführer Verband der Musikwirtschafts- & Verwertungsgesellschaften",
+          "info": "GF Verband d. Musikwirtschafts- & Verwertungsgesellschaften",
           "gremium": "Bundesregierung",
           "id": "medwenitsch"
         },
         {
-          "name": "Rainer Rößlhuber",
+          "name": "Rainer Rösslhuber",
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Generalsekretät Sportunion",
+          "info": "Generalsekretär Sportunion",
           "gremium": "Bundesregierung",
           "id": "roesslhuber"
         },
@@ -98,7 +98,7 @@
           "value": 1,
           "partei": "SPÖ",
           "sex": "m",
-          "info": "test",
+          "info": "Vorstandsdirektor Casinos Austria",
           "gremium": "Parteien",
           "id": "hoscher"
         },
@@ -263,7 +263,7 @@
           "value": 1,
           "partei": "SPÖ",
           "sex": "m",
-          "info": "Eltern und Familien",
+          "info": "Prof. f. Innere Medizin",
           "gremium": "Publikumsrat",
           "id": "meryn"
         },
@@ -272,7 +272,7 @@
           "value": 1,
           "partei": "SPÖ",
           "sex": "f",
-          "info": "AK",
+          "info": "Arbeiterkammer",
           "gremium": "Publikumsrat",
           "id": "zimmer"
         },
@@ -281,7 +281,7 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Hilfswerk",
+          "info": "Geschäftsführer Hilfswerk",
           "gremium": "Publikumsrat",
           "id": "marschitz"
         },
@@ -290,7 +290,7 @@
           "value": 1,
           "partei": "ÖVP",
           "sex": "f",
-          "info": "Österreichwerbung",
+          "info": "Österreich Werbung",
           "gremium": "Publikumsrat",
           "id": "stolba"
         }
@@ -321,9 +321,9 @@
         {
           "name": "Stefan Jung",
           "value": 1,
-          "partei": "unabhängig",
+          "partei": "SPÖ",
           "sex": "m",
-          "info": "test",
+          "info": "ORF-ZiB",
           "gremium": "Zentralbetriebsrat",
           "id": "jung"
         },
@@ -339,9 +339,9 @@
         {
           "name": "Robert Ziegler",
           "value": 1,
-          "partei": "unabhängig",
+          "partei": "ÖVP",
           "sex": "m",
-          "info": "test",
+          "info": "Landesstudio NÖ",
           "gremium": "Zentralbetriebsrat",
           "id": "ziegler"
         }
