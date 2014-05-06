@@ -34,24 +34,6 @@
           "id": "schellner"
         },
         {
-          "name": "Bernadette Tischler",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "f",
-          "info": "Konsumenten",
-          "gremium": "Publikumsrat",
-          "id": "tischler"
-        },
-        {
-          "name": "Beate Wimmer-Puchinger",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "f",
-          "info": "Hochschulen",
-          "gremium": "Publikumsrat",
-          "id": "wimmer"
-        },
-        {
           "name": "Gerhard Berti",
           "value": 1,
           "partei": "SPÖ",
@@ -59,15 +41,6 @@
           "info": "freigestellter Betriebsrat",
           "gremium": "Zentralbetriebsrat",
           "id": "berti"
-        },
-        {
-          "name": "Thomas Drozda",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Generaldirektor Vereinigte Bühnen Wien",
-          "gremium": "Bundesregierung",
-          "id": "drozda"
         },
         {
           "name": "Andrea Brem",
@@ -97,15 +70,6 @@
           "id": "kettner"
         },
         {
-          "name": "Josef Kirchberger",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Kunst",
-          "gremium": "Publikumsrat",
-          "id": "kirchberger"
-        },
-        {
           "name": "Siegfried Meryn",
           "value": 1,
           "partei": "SPÖ",
@@ -113,15 +77,6 @@
           "info": "Eltern und Familien",
           "gremium": "Publikumsrat",
           "id": "meryn"
-        },
-        {
-          "name": "Werner Muhm",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Direktor AK Wien",
-          "gremium": "Parteien",
-          "id": "muhm"
         },
         {
           "name": "Alois Sundl",
@@ -157,24 +112,6 @@
           "id": "hauft"
         },
         {
-          "name": "Peter Koren",
-          "value": 1,
-          "partei": "ÖVP",
-          "sex": "m",
-          "info": "Vize-Generalsekretär IV",
-          "gremium": "Parteien",
-          "id": "koren"
-        },
-        {
-          "name": "Franz Krainer",
-          "value": 1,
-          "partei": "ÖVP",
-          "sex": "m",
-          "info": "Rechtsanwalt",
-          "gremium": "Bundesregierung",
-          "id": "krainer"
-        },
-        {
           "name": "Matthias Limbeck",
           "value": 1,
           "partei": "ÖVP",
@@ -193,15 +130,6 @@
           "id": "medwenitsch"
         },
         {
-          "name": "Edelbert Meusburger",
-          "value": 1,
-          "partei": "ÖVP",
-          "sex": "m",
-          "info": "Vorarlberg",
-          "gremium": "Bundeslaender",
-          "id": "meusburger"
-        }, 
-        {
           "name": "Josef Resch",
           "value": 1,
           "partei": "ÖVP",
@@ -218,15 +146,6 @@
           "info": "Generalsekretät Sportunion",
           "gremium": "Bundesregierung",
           "id": "roesslhuber"
-        },
-        {
-          "name": "Gerhard Tötschinger",
-          "value": 1,
-          "partei": "ÖVP",
-          "sex": "m",
-          "info": "Ältere Menschen",
-          "gremium": "Publikumsrat",
-          "id": "toetschinger"
         },
         {
           "name": "Thomas Zach",
@@ -279,17 +198,17 @@
       ]
     },
     {
-      "name": "BZÖ",
+      "name": "Team Stronach",
       "value": 1,
       "children": [
         {
-          "name": "Alexander Scheer",
+          "name": "",
           "value": 1,
-          "partei": "BZÖ",
+          "partei": "Team Stronach",
           "sex": "m",
           "info": "test",
           "gremium": "Parteien",
-          "id": "scheer"
+          "id": ""
         }
       ]
     },
@@ -340,21 +259,6 @@
           "info": "test",
           "gremium": "Zentralbetriebsrat",
           "id": "ziegler"
-        }
-      ]
-    },
-    {
-      "name": "Krone",
-      "value": 1,
-      "children": [
-        {
-          "name": "Alexander Hartig",
-          "value": 1,
-          "partei": "Krone",
-          "sex": "m",
-          "info": "Aufsichtsrat Turnauer-Imperium",
-          "gremium": "Bundesregierung",
-          "id": "hartig"
         }
       ]
     }

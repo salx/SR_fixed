@@ -16,6 +16,15 @@
           "id": "brem"
         },
         {
+          "name": "Karin Gutierrez-Lobos",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "f",
+          "info": "Medizin-Uni",
+          "gremium": "Bundesregierung",
+          "id": "gutierrez"
+        },
+        {
           "name": "Brigitte Kulovits-Rupp",
           "value": 1,
           "partei": "SPÖ",
@@ -33,23 +42,14 @@
           "gremium": "Bundesregierung",
           "id": "schellner"
         },
-        {
-          "name": "Bernadette Tischler",
+         {
+          "name": "Daniela Zimmer",
           "value": 1,
           "partei": "SPÖ",
           "sex": "f",
-          "info": "Konsumenten",
+          "info": "AK",
           "gremium": "Publikumsrat",
-          "id": "tischler"
-        },
-        {
-          "name": "Beate Wimmer-Puchinger",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "f",
-          "info": "Hochschulen",
-          "gremium": "Publikumsrat",
-          "id": "wimmer"
+          "id": "zimmer"
         },
         {
           "name": "Margit Hauft",
@@ -59,6 +59,15 @@
           "info": "Oberösterreich",
           "gremium": "Bundeslaender",
           "id": "hauft"
+        },
+        {
+          "name": "Petra Stolba",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "f",
+          "info": "Österreichwerbung",
+          "gremium": "Publikumsrat",
+          "id": "stolba"
         },
         {
           "name": "Christiana Jankovics",
@@ -85,15 +94,6 @@
           "id": "medwenitsch"
         },
         {
-          "name": "Thomas Drozda",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Generaldirektor Vereinigte Bühnen Wien",
-          "gremium": "Bundesregierung",
-          "id": "drozda"
-        },
-        {
           "name": "Rudolf Ertl",
           "value": 1,
           "partei": "SPÖ",
@@ -101,6 +101,15 @@
           "info": "Vorstand Wiener Städtische",
           "gremium": "Bundesregierung",
           "id": "ertl"
+        },
+        {
+          "name": "Erich Fenninger",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "Volkshilfe",
+          "gremium": "Publikumsrat",
+          "id": "fenninger"
         },
         {
           "name": "Dietmar Hoscher",
@@ -121,13 +130,13 @@
           "id": "kettner"
         },
         {
-          "name": "Josef Kirchberger",
+          "name": "Willi Mernyi",
           "value": 1,
           "partei": "SPÖ",
           "sex": "m",
-          "info": "Kunst",
+          "info": "ÖGB",
           "gremium": "Publikumsrat",
-          "id": "kirchberger"
+          "id": "mernyi"
         },
         {
           "name": "Siegfried Meryn",
@@ -140,15 +149,6 @@
 
         },
         {
-          "name": "Werner Muhm",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Direktor AK Wien",
-          "gremium": "Parteien",
-          "id": "muhm"
-        },
-        {
           "name": "Alois Sundl",
           "value": 1,
           "partei": "SPÖ",
@@ -157,7 +157,33 @@
           "gremium": "Bundeslaender",
           "id": "sundl"
         },
-        
+        {
+          "name": "Alfred Geismayr",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Vorarlberg",
+          "gremium": "Bundeslaender",
+          "id": "geismayr"
+        },
+        {
+          "name": "Herbert Fechter",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Veranstalter",
+          "gremium": "Bundesregierung",
+          "id": "fechter"
+        },
+        {
+          "name": "Herwig Hösele",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Zukunftsfonds",
+          "gremium": "Bundesregierung",
+          "id": "hoesele"
+        },
         {
           "name": "Alberich Klinger",
           "value": 1,
@@ -166,24 +192,6 @@
           "info": "Niederösterreich",
           "gremium": "Bundeslaender",
           "id": "klinger"
-        },
-        {
-          "name": "Peter Koren",
-          "value": 1,
-          "partei": "ÖVP",
-          "sex": "m",
-          "info": "Vize-Generalsekretär IV",
-          "gremium": "Parteien",
-          "id": "koren"
-        },
-        {
-          "name": "Franz Krainer",
-          "value": 1,
-          "partei": "ÖVP",
-          "sex": "m",
-          "info": "Rechtsanwalt",
-          "gremium": "Bundesregierung",
-          "id": "krainer"
         },
         {
           "name": "Matthias Limbeck",
@@ -195,13 +203,13 @@
           "id": "limbeck"
         },
         {
-          "name": "Edelbert Meusburger",
+          "name": "Walter Marschitz",
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Vorarlberg",
-          "gremium": "Bundeslaender",
-          "id": "meusburger"
+          "info": "Hilfswerk",
+          "gremium": "Publikumsrat",
+          "id": "marschitz"
         },
         {
           "name": "Gerhard Berti",
@@ -229,15 +237,6 @@
           "info": "Generalsekretät Sportunion",
           "gremium": "Bundesregierung",
           "id": "roesslhuber"
-        },
-        {
-          "name": "Gerhard Tötschinger",
-          "value": 1,
-          "partei": "ÖVP",
-          "sex": "m",
-          "info": "Ältere Menschen",
-          "gremium": "Publikumsrat",
-          "id": "toetschinger"
         },
         {
           "name": "Thomas Zach",
@@ -276,13 +275,22 @@
           "id": "embacher"
         },
         {
-          "name": "Alexander Scheer",
+          "name": "Hans Peter Haselsteiner",
           "value": 1,
-          "partei": "BZÖ",
+          "partei": "Neos",
           "sex": "m",
-          "info": "test",
+          "info": "Bauunternehmer",
           "gremium": "Parteien",
-          "id": "scheer"
+          "id": "haselsteiner"
+        },
+        {
+          "name": "Günter Leitold",
+          "value": 1,
+          "partei": "Team Stronach",
+          "sex": "m",
+          "info": "GRAWE-Gruppe",
+          "gremium": "Parteien",
+          "id": "leitold"
         },
         {
           "name": "Franz Küberl",
@@ -319,15 +327,6 @@
           "info": "test",
           "gremium": "Zentralbetriebsrat",
           "id": "ziegler"
-        },
-        {
-          "name": "Alexander Hartig",
-          "value": 1,
-          "partei": "Krone",
-          "sex": "m",
-          "info": "Aufsichtsrat Turnauer-Imperium",
-          "gremium": "Bundesregierung",
-          "id": "hartig"
         }
       ]
     }
