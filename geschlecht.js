@@ -4,16 +4,17 @@
 - final styling (awaiting feedback)
 */
 
-var margin = {top: 280, right: 280, bottom: 250, left: 280},
+var margin = {top: 280, right: 250, bottom: 250, left: 250},
     radius = Math.min(margin.top, margin.right, margin.bottom, margin.left);
 
 var hue = d3.scale.category10();
 
 var svg = d3.select(".content").append("svg")
-    .attr("width", 500)
-    .attr("height", 500)
+    .attr("width", 350)
+    .attr("height", 450)
     .append("g")
-    .attr("transform", "translate(" + (margin.left-40) + "," + (margin.top-50) + ")");
+    .attr("transform", "translate(" + (margin.left-70) + "," + (margin.top-60) + ")");
+    //.attr("transform", "translate(" + (margin.left-40) + "," + (margin.top-50) + ")");
 
   svg.append("defs").append("pattern")
       .attr("id", "centerBackground")
