@@ -146,6 +146,8 @@ d3.json("geschlecht.json", function(error, root) {
             zoomIn(d);
             d3.select(".infocontent2").classed("hidden", false);
             d3.select(".text.allgemein").classed( "hidden", false);
+            d3.select(".icon1").classed( "hidden", true);
+            d3.select(".icon2").classed( "hidden", true);
             //d3.selectAll(".hide").classed("hidden", true);
             if(d.name === "f"){
                 d3.selectAll(".m").classed("hidden", true);
@@ -183,6 +185,8 @@ d3.json("geschlecht.json", function(error, root) {
     d3.selectAll(".infocontent2").classed("hidden", true);
     d3.selectAll(".f").classed("hidden", false);
     d3.selectAll(".m").classed("hidden", false);
+    d3.select(".icon1").classed( "hidden", false);
+    d3.select(".icon2").classed( "hidden", false);
 
 
     //d3.selectAll(".infocontent2 .text").classed("hidden", true);//du hast auch versucht elemente zu selecten die sowohl die infoconten2 als auch die text class haben.. whitespace :)
@@ -245,6 +249,8 @@ d3.json("geschlecht.json", function(error, root) {
               zoomIn(d);
               d3.select(".infocontent2").classed("hidden", false);
               d3.select(".allgemein").classed( "hidden", false);
+              d3.select(".icon1").classed( "hidden", true);
+              d3.select(".icon2").classed( "hidden", true);
               if(d.name === "f"){
                 d3.selectAll(".m").classed("hidden", true);
               }else if(d.name === "m"){
