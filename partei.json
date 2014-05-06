@@ -7,6 +7,15 @@
       "value": 15,
       "children": [
          {
+          "name": "Andrea Brem",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "f",
+          "info": "Geschäftsführerin Wiener Frauenhäuser",
+          "gremium": "Bundesregierung",
+          "id": "brem"
+        },
+         {
           "name": "Rudolf Ertl",
           "value": 1,
           "partei": "SPÖ",
@@ -14,6 +23,15 @@
           "info": "Vorstand Wiener Städtische",
           "gremium": "Bundesregierung",
           "id": "ertl"
+        },
+        {
+          "name": "Karin Gutierrez-Lobos",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "f",
+          "info": "Medizin-Uni",
+          "gremium": "Bundesregierung",
+          "id": "gutierrez"
         },
         {
           "name": "Brigitte Kulovits-Rupp",
@@ -43,13 +61,13 @@
           "id": "berti"
         },
         {
-          "name": "Andrea Brem",
+          "name": "Erich Fenninger",
           "value": 1,
           "partei": "SPÖ",
-          "sex": "f",
-          "info": "Geschäftsführerin Wiener Frauenhäuser",
-          "gremium": "Bundesregierung", 
-          "id": "brem"
+          "sex": "m",
+          "info": "Volkshilfe",
+          "gremium": "Publikumsrat",
+          "id": "fenninger"
         },
         {
           "name": "Dietmar Hoscher",
@@ -70,6 +88,15 @@
           "id": "kettner"
         },
         {
+          "name": "Willi Mernyi",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "m",
+          "info": "ÖGB",
+          "gremium": "Publikumsrat",
+          "id": "mernyi"
+        },
+        {
           "name": "Siegfried Meryn",
           "value": 1,
           "partei": "SPÖ",
@@ -86,6 +113,14 @@
           "info": "Steiermark",
           "gremium": "Bundeslaender",
           "id": "sundl"
+        }, {
+          "name": "Daniela Zimmer",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "f",
+          "info": "AK",
+          "gremium": "Publikumsrat",
+          "id": "zimmer"
         } 
       ]
     },
@@ -93,14 +128,23 @@
       "name": "ÖVP",
       "value": 10,
       "children": [
-        {
-          "name": "Alberich Klinger",
+         {
+          "name": "Herbert Fechter",
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
-          "info": "Niederösterreich",
+          "info": "Veranstalter",
+          "gremium": "Bundesregierung",
+          "id": "fechter"
+        },
+        {
+          "name": "Alfred Geismayr",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Vorarlberg",
           "gremium": "Bundeslaender",
-          "id": "klinger"
+          "id": "geismayr"
         },
         {
           "name": "Margit Hauft",
@@ -112,6 +156,24 @@
           "id": "hauft"
         },
         {
+          "name": "Herwig Hösele",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Zukunftsfonds",
+          "gremium": "Bundesregierung",
+          "id": "hoesele"
+        },
+        {
+          "name": "Alberich Klinger",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Niederösterreich",
+          "gremium": "Bundeslaender",
+          "id": "klinger"
+        },
+        {
           "name": "Matthias Limbeck",
           "value": 1,
           "partei": "ÖVP",
@@ -120,6 +182,15 @@
           "gremium": "Bundeslaender",
           "id": "limbeck"
         }, 
+        {
+          "name": "Walter Marschitz",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Hilfswerk",
+          "gremium": "Publikumsrat",
+          "id": "marschitz"
+        },
         {
           "name": "Franz Medwenitsch",
           "value": 1,
@@ -148,13 +219,31 @@
           "id": "roesslhuber"
         },
         {
+          "name": "Petra Stolba",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "f",
+          "info": "Österreichwerbung",
+          "gremium": "Publikumsrat",
+          "id": "stolba"
+        },
+        {
           "name": "Thomas Zach",
           "value": 1,
           "partei": "ÖVP",
           "sex": "m",
           "info": "Management Staatsdruckerei",
-          "gremium": "Bundesregierung",
+          "gremium": "Parteien",
           "id": "zach"
+        },
+        {
+          "name": "Robert Ziegler",
+          "value": 1,
+          "partei": "ÖVP",
+          "sex": "m",
+          "info": "Landesstudio Niederösterreich",
+          "gremium": "Zentralbetriebsrat",
+          "id": "ziegler"
         }
       ]
     },
@@ -198,17 +287,32 @@
       ]
     },
     {
+      "name": "Neos",
+      "value": 1,
+      "children": [
+        {
+          "name": "Hans Peter Haselsteiner",
+          "value": 1,
+          "partei": "Neos",
+          "sex": "m",
+          "info": "Bauunternehmer",
+          "gremium": "Parteien",
+          "id": "Haselsteiner"
+        }
+      ]
+    },
+    {
       "name": "Team Stronach",
       "value": 1,
       "children": [
         {
-          "name": "",
+          "name": "Günter Leitold",
           "value": 1,
           "partei": "Team Stronach",
           "sex": "m",
-          "info": "test",
+          "info": "Grawe-Gruppe",
           "gremium": "Parteien",
-          "id": ""
+          "id": "Leitold"
         }
       ]
     },
@@ -250,15 +354,6 @@
           "info": "Ö1 Literatur",
           "gremium": "Zentralbetriebsrat",
           "id": "moser"
-        },
-        {
-          "name": "Robert Ziegler",
-          "value": 1,
-          "partei": "unabhängig",
-          "sex": "m",
-          "info": "test",
-          "gremium": "Zentralbetriebsrat",
-          "id": "ziegler"
         }
       ]
     }

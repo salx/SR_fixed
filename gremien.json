@@ -34,15 +34,6 @@
           "id": "ertl"
         },
         {
-          "name": "Herwig Hösele",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "m",
-          "info": "Zukunftsfonds",
-          "gremium": "Parteien",
-          "id": "hoesele"
-        },
-        {
           "name": "Andrea Schellner",
           "value": 1,
           "partei": "SPÖ",
@@ -88,13 +79,13 @@
           "id": "roesslhuber"
         },
         {
-          "name": "Thomas Zach",
+          "name": "Franz Küberl",
           "value": 1,
-          "partei": "ÖVP",
+          "partei": "unabhängig",
           "sex": "m",
-          "info": "Management Staatsdruckerei",
+          "info": "Religion",
           "gremium": "Bundesregierung",
-          "id": "zach"
+          "id": "kueberl"
         }
       ]
     },
@@ -112,13 +103,13 @@
           "id": "hoscher"
         },
         {
-          "name": "Norbert Steger",
+          "name": "Thomas Zach",
           "value": 1,
-          "partei": "FPÖ",
+          "partei": "ÖVP",
           "sex": "m",
-          "info": "Rechtsanwalt",
+          "info": "Unternehmensberater",
           "gremium": "Parteien",
-          "id": "steger"
+          "id": "zach"
         },
         {
           "name": "Wilfried Embacher",
@@ -126,8 +117,17 @@
           "partei": "Grüne",
           "sex": "m",
           "info": "Rechtsanwalt",
-          "gremium": "Bundesregierung",
+          "gremium": "Parteien",
           "id": "embacher"
+        },
+        {
+          "name": "Norbert Steger",
+          "value": 1,
+          "partei": "FPÖ",
+          "sex": "m",
+          "info": "Rechtsanwalt",
+          "gremium": "Parteien",
+          "id": "steger"
         },
         {
           "name": "Hans Peter Haselsteiner",
@@ -293,15 +293,6 @@
           "info": "Österreichwerbung",
           "gremium": "Publikumsrat",
           "id": "stolba"
-        },
-        {
-          "name": "Franz Küberl",
-          "value": 1,
-          "partei": "unabhängig",
-          "sex": "m",
-          "info": "Religion",
-          "gremium": "Publikumsrat",
-          "id": "kueberl"
         }
       ]
     },

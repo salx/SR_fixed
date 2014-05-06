@@ -270,10 +270,20 @@ function fill(d){
     }
     return colors[p.partei];
   }else if( p.depth === 1 ){
-    //var c = "#999";
+    /*var c = "#999";
     var c = d3.lab(hue(p.name));
     c.l = luminance(d.sum);
     return c;
+    */
+    var colors = {
+      'Bundesregierung': '#303030',
+      'Bundeslaender': '#4b4b4b',
+      'Parteien': '#666666',
+      'Publikumsrat': ' #8e8e8e',
+      'Zentralbetriebsrat': '#b4b4b4'
+    }
+    console.log(p.name)
+    return colors[p.name];
   }
 }
 

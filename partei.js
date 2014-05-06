@@ -223,9 +223,9 @@ function fill(d){
      'ÖVP': 'black',
      'FPÖ': 'blue',
      'Grüne': 'green',
-     'BZÖ': 'orange',
-     'unabhängig': '#999',
-     'Krone': '#999'
+     'Team Stronach': 'yellow',
+      'unabhängig': '#999',
+      'Neos': 'magenta'
   }
   return colors[p.name];
   }else if(p.depth === 2){
