@@ -4,7 +4,7 @@
   "children": [
     {
       "name": "f",
-      "value": 7,
+      "value": 8,
       "children": [
         {
           "name": "Andrea Brem",
@@ -24,7 +24,7 @@
           "gremium": "Bundesregierung",
           "id": "gutierrez"
         },
-        {
+         {
           "name": "Brigitte Kulovits-Rupp",
           "value": 1,
           "partei": "SPÖ",

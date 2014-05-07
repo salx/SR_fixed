@@ -4,7 +4,7 @@
   "children": [
     {
       "name": "SPÖ",
-      "value": 15,
+      "value": 13,
       "children": [
          {
           "name": "Andrea Brem",
@@ -41,15 +41,6 @@
           "info": "ORF-Magazine",
           "gremium": "Zentralbetriebsrat",
           "id": "jung"
-        },
-        {
-          "name": "Brigitte Kulovits-Rupp",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "f",
-          "info": "AK Burgenland",
-          "gremium": "Bundeslaender",
-          "id": "kulovits"
         },
         {
           "name": "Andrea Schellner",
@@ -96,6 +87,15 @@
           "gremium": "Bundeslaender",
           "id": "kettner"
         },
+         {
+          "name": "Brigitte Kulovits-Rupp",
+          "value": 1,
+          "partei": "SPÖ",
+          "sex": "f",
+          "info": "AK Burgenland",
+          "gremium": "Bundeslaender",
+          "id": "kulovits"
+        },
         {
           "name": "Willi Mernyi",
           "value": 1,
@@ -135,7 +135,7 @@
     },
     {
       "name": "ÖVP",
-      "value": 10,
+      "value": 13,
       "children": [
          {
           "name": "Herbert Fechter",
@@ -327,7 +327,7 @@
     },
     {
       "name": "unabhängig",
-      "value": 5,
+      "value": 4,
       "children": [
         {
           "name": "Christiana Jankovics",
@@ -337,7 +337,8 @@
           "info": "Redakteurin",
           "gremium": "Zentralbetriebsrat",
           "id": "jankovics"
-        },{
+        },
+        {
           "name": "Franz Küberl",
           "value": 1,
           "partei": "unabhängig",
