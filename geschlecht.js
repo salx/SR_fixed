@@ -1,8 +1,4 @@
-/*
-- First load latency of center image.
-- final texts & images
-- final styling (awaiting feedback)
-*/
+
 
 var margin = {top: 280, right: 250, bottom: 250, left: 250},
     radius = Math.min(margin.top, margin.right, margin.bottom, margin.left);
@@ -70,7 +66,7 @@ var tip = d3.tip()
     }else if( d.name === "m" ){
       return "<text>M&auml;nner</br> Zum Hineinzoomen klicken</text>";
     }else if( d.depth === 2 ){
-      return tip.hide(); //sifu - wie kann man das "richtig" lösen. das stimmt so nicht, produziert einen Fehler auf der Konsole, macht aber was ich will (tip erscheint nicht.)
+      return tip.hide(); //wie kann man das "richtig" lösen. das stimmt so nicht, produziert einen Fehler auf der Konsole, macht aber was ich will (tip erscheint nicht.)
     }else{
       return "<text><strong>"+d.name+":</br>"+d.partei+",</br>"+d.info+"</strong></text>";
     }
@@ -115,17 +111,11 @@ d3.json("geschlecht.json", function(error, root) {
   partition
       .children(function(d, depth) { return depth < 2 ? d._children : null; })
       .value(function(d) { return d.sum; });
-
-  //svg.selectAll( '.center' ).remove();
-
   
   var center = svg.append("circle")
       .attr("r", radius / 3)
       .style("fill","url(#centerBackground)")
       .on("click", zoomOut);
-
-  //center.append("title")
-      //.text("zoom out");
 
   var path = svg.selectAll("path")
       .data(partition.nodes(root).slice(1))
@@ -140,7 +130,7 @@ d3.json("geschlecht.json", function(error, root) {
             }
           })
       .each(function(d) { this._current = updateArc(d); })
-      //.on("click", zoomIn); //hier: Funktion für click
+      
       // so kommen alle personen nacheinander rein. Alternativ: Zeile 194
       .on("click", function(d){
           if(d.children){
@@ -150,7 +140,6 @@ d3.json("geschlecht.json", function(error, root) {
             d3.select(".i").classed("hidden", true);
             d3.select(".icon1").classed( "hidden", true);
             d3.select(".icon2").classed( "hidden", true);
-            //d3.selectAll(".hide").classed("hidden", true);
             if(d.name === "f"){
                 d3.selectAll(".m").classed("hidden", true);
               }else if(d.name === "m"){
@@ -176,14 +165,12 @@ d3.json("geschlecht.json", function(error, root) {
       }else if( n === "m" ){
         center.style( "fill", "url(#centerBackgroundM)" )
       }
-    //center.select("image")
-        //.remove();
   }
 
   function zoomOut(p) {
     if (!p.parent) return;
     center.style("fill","url(#centerBackground)")
-    d3.selectAll(".text2").classed("hidden", true);//funkt aber nicht...wieso...
+    d3.selectAll(".text2").classed("hidden", true);
     d3.selectAll(".infocontent2").classed("hidden", true);
     d3.select(".i").classed("hidden", false);
     d3.selectAll(".f").classed("hidden", false);
@@ -192,17 +179,8 @@ d3.json("geschlecht.json", function(error, root) {
     d3.select(".icon2").classed( "hidden", false);
 
 
-    //d3.selectAll(".infocontent2 .text").classed("hidden", true);//du hast auch versucht elemente zu selecten die sowohl die infoconten2 als auch die text class haben.. whitespace :)
-
     zoom(p.parent, p);
 
-    /* Dieser Part produziert einen "not defined fehler"
-    circle.classed("female", false); 
-    circle.classed("male", false);
-    center.select("image")
-      .remove();
-    d3.select(".text.geschlecht").classed("hidden", false);
-    */
   }
 
   // Zoom to the specified new root.
@@ -270,39 +248,11 @@ d3.json("geschlecht.json", function(error, root) {
           .on("mouseover", tip.show )
           .on("mouseout", tip.hide);
 
-
-      /* - hier gibt's einen Fehler
-      path.transition()
-          .each("end", function(d, i){ 
-            if(labelText === "m"){
-              circle.classed("male", true)
-              center.append("image")
-              .attr("xlink:href", "icon_25455.svg")
-              .attr("x", "-50px")
-              .attr("y", "-50px")
-              .attr("width", "100px")
-              .attr("height", "100px")
-              d3.selectAll(".text").classed("hidden", true)
-              d3.select(".text.m").classed("hidden", false);
-            }else if(labelText==="f"){
-              circle.classed("female", true)
-              center.append("image")
-              .attr("xlink:href", "icon_25454.png")
-              .attr("x", "-50px")
-              .attr("y", "-50px")
-              .attr("width", "100px")
-              .attr("height", "100px")
-              d3.selectAll(".text").classed("hidden", true)
-              d3.select(".text.f").classed("hidden", false);
-            }
-          })
-
-
       
       path.transition()
           .style("fill-opacity", 1)
           .attrTween("d", function(d) { return arcTween.call(this, updateArc(d)); });
-      */
+    
       path.transition()
           .style("fill-opacity", function(d){
             if(d.depth===2){
@@ -322,15 +272,6 @@ function key(d) {
   return k.reverse().join(".");
 }
 
-/*
-function fill(d) {
-  var p = d;
-  while (p.depth > 1) p = p.parent;
-  var c = d3.lab(hue(p.name));
-  //c.l = luminance(d.sum);
-  return c;
-}
-*/
 
 function fill(d){
   var p = d;

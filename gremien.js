@@ -9,14 +9,6 @@ var luminance = d3.scale.sqrt()
     .clamp(true)
     .range([50, 20]);
 
-/*
-var svg = d3.select("body").append("svg")
-    .attr("width", margin.left + margin.right)
-    .attr("height", margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-*/
-
 var svg = d3.select(".content").append("svg")
     .attr("width", 350)
     .attr("height", 450)
@@ -44,7 +36,7 @@ var tip = d3.tip()
     if( d.children ){
       return "<text>" + d.name +"</br> Zum Hineinzoomen klicken</text>"
     }else if( d.depth === 2 ){
-      return tip.hide(); //sifu - wie kann man das "richtig" lösen. das stimmt so nicht, produziert einen Fehler auf der Konsole, macht aber was ich will (tip erscheint nicht.)
+      return tip.hide(); //wie kann man das "richtig" lösen. das stimmt so nicht, produziert einen Fehler auf der Konsole, macht aber was ich will (tip erscheint nicht.)
     }else{
       return "<text><strong>"+d.name+":</br>"+d.partei+",</br>"+d.info+"</strong></text>"
     }
@@ -62,13 +54,6 @@ var arc = d3.svg.arc()
     .innerRadius( function(d){ return radius / 3 * d.depth; } )
     .outerRadius( function(d){ return radius / ( 2 + d.depth ) * ( d.depth + 1 ) -1; } )
 
-/*
-var arc = d3.svg.arc()
-    .startAngle(function(d) { return d.x; })
-    .endAngle(function(d) { return d.x + d.dx - .01 / (d.depth + .5); })
-    .innerRadius(function(d) { return radius / 3 * d.depth; })
-    .outerRadius(function(d) { return radius / 3 * (d.depth + 1) - 1; });
-*/
 
 var l;
 
@@ -100,7 +85,7 @@ d3.json("gremien.json", function(error, root) {
   center.append("title")
       .text("ORF Stiftungsrat - Bestellgremien");
 
-  svg.append("text") //tuste nicht in circle rein, sondern einfach dahinter? dann geht er
+  svg.append("text")
           .text("")
           .attr("x", - 30 );
 
@@ -137,7 +122,7 @@ d3.json("gremien.json", function(error, root) {
     if (p.depth > 1) p = p.parent;
     if (!p.children) return;
     center.style("fill", "none");
-    d3.selectAll("text") // funkt prizipiell. Ist im DOM, aber nicht sichtbar, wieso?
+    d3.selectAll("text")
       .text(function(d){ return p.name })
       .attr("x", function(d){
         if(p.name === "Bundesregierung"){
@@ -244,16 +229,6 @@ function key(d) {
   while (p.depth) k.push(p.name), p = p.parent;
   return k.reverse().join(".");
 }
-
-/*
-function fill(d) {
-  var p = d;
-  while (p.depth > 1) p = p.parent;
-  var c = d3.lab(hue(p.name));
-  c.l = luminance(d.sum);
-  return c;
-}
-*/
 
 function fill(d){
   var p = d;

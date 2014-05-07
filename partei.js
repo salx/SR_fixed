@@ -34,14 +34,6 @@ var arc = d3.svg.arc()
     .innerRadius( function(d){ return radius / 3 * d.depth; } )
     .outerRadius( function(d){ return radius / ( 2 + d.depth ) * ( d.depth + 1 ) -1; } )
 
-/*
-var arc = d3.svg.arc()
-    .startAngle(function(d) { return d.x; })
-    .endAngle(function(d) { return d.x + d.dx - .01 / (d.depth + .5); })
-    .innerRadius(function(d) { return radius / 3 * d.depth; })
-    .outerRadius(function(d) { return radius / 3 * (d.depth + 1) - 1; });
-*/
-
 
 d3.json("partei.json", function(error, root) {
 
@@ -70,7 +62,7 @@ d3.json("partei.json", function(error, root) {
   center.append("title")
       .text("ORF Stiftungsrat - Parteien");
 
-  svg.append("text") //tuste nicht in circle rein, sondern einfach dahinter? dann geht er
+  svg.append("text")
           .text("Parteien")
           .attr("x", - 30 );
 
