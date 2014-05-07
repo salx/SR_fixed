@@ -85,14 +85,14 @@
       "value": 27,
       "children": [
         {
-          "name": "Matthias Limbeck",
+          "name": "Gerhard Berti",
           "value": 1,
-          "partei": "ÖVP",
+          "partei": "SPÖ",
           "sex": "m",
-          "info": "GF Reed Messe Salzburg",
-          "gremium": "Bundeslaender",
-          "id": "limbeck"
-        },
+          "info": "ORF-Technik",
+          "gremium": "Zentralbetriebsrat",
+          "id": "berti"
+        }, 
         {
           "name": "Rudolf Ertl",
           "value": 1,
@@ -203,14 +203,14 @@
           "id": "klinger"
         },
         {
-          "name": "Gerhard Berti",
+          "name": "Matthias Limbeck",
           "value": 1,
-          "partei": "SPÖ",
+          "partei": "ÖVP",
           "sex": "m",
-          "info": "ORF-Technik",
-          "gremium": "Zentralbetriebsrat",
-          "id": "berti"
-        }, 
+          "info": "GF Reed Messe Salzburg",
+          "gremium": "Bundeslaender",
+          "id": "limbeck"
+        },
         {
           "name": "Walter Marschitz",
           "value": 1,
