@@ -24,15 +24,6 @@
           "gremium": "Bundesregierung",
           "id": "gutierrez"
         },
-         {
-          "name": "Brigitte Kulovits-Rupp",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "f",
-          "info": "AK Burgenland",
-          "gremium": "Bundeslaender",
-          "id": "kulovits"
-        },
         {
           "name": "Andrea Schellner",
           "value": 1,
@@ -77,6 +68,15 @@
           "info": "Redakteurin ORF Fernsehen",
           "gremium": "Zentralbetriebsrat",
           "id": "jankovics"
+        },
+        {
+          "name": "Brigitte Kulovits-Rupp",
+          "value": 1,
+          "partei": "unabhängig",
+          "sex": "f",
+          "info": "AK Burgenland",
+          "gremium": "Bundeslaender",
+          "id": "kulovits"
         }
       ]
     },

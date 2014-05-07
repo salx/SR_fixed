@@ -87,15 +87,6 @@
           "gremium": "Bundeslaender",
           "id": "kettner"
         },
-         {
-          "name": "Brigitte Kulovits-Rupp",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "f",
-          "info": "AK Burgenland",
-          "gremium": "Bundeslaender",
-          "id": "kulovits"
-        },
         {
           "name": "Willi Mernyi",
           "value": 1,
@@ -337,6 +328,15 @@
           "info": "Redakteurin",
           "gremium": "Zentralbetriebsrat",
           "id": "jankovics"
+        },
+        {
+          "name": "Brigitte Kulovits-Rupp",
+          "value": 1,
+          "partei": "unabhängig",
+          "sex": "f",
+          "info": "AK Burgenland",
+          "gremium": "Bundeslaender",
+          "id": "kulovits"
         },
         {
           "name": "Franz Küberl",

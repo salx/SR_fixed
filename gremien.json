@@ -163,15 +163,6 @@
           "id": "kettner"
         },
         {
-          "name": "Brigitte Kulovits-Rupp",
-          "value": 1,
-          "partei": "SPÖ",
-          "sex": "f",
-          "info": "Burgenland",
-          "gremium": "Bundeslaender",
-          "id": "kulovits"
-        },
-        {
           "name": "Alois Sundl",
           "value": 1,
           "partei": "SPÖ",
@@ -233,6 +224,15 @@
           "info": "Kärnten",
           "gremium": "Bundeslaender",
           "id": "neuschitzer"
+        },
+        {
+          "name": "Brigitte Kulovits-Rupp",
+          "value": 1,
+          "partei": "unabhängig",
+          "sex": "f",
+          "info": "Burgenland",
+          "gremium": "Bundeslaender",
+          "id": "kulovits"
         }
       ]
     },
