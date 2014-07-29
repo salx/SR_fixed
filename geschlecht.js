@@ -1,5 +1,3 @@
-
-
 var margin = {top: 280, right: 250, bottom: 250, left: 250},
     radius = Math.min(margin.top, margin.right, margin.bottom, margin.left);
 
@@ -21,7 +19,6 @@ svg.append("defs").append("pattern")
       .attr("patternUnits", "objectBoundingBox")
         .append("image") 
           .attr("xlink:href", "icon_21902.svg")
-          //.attr("xlink:href", "icon_12568_both.svg")
           .attr("x", 20)
           .attr("y", 15)
           .attr("width", 2*radius/4)
@@ -63,7 +60,7 @@ var arc = d3.svg.arc()
 */
 
 //background female
-    svg.append("defs").append("pattern")
+svg.append("defs").append("pattern")
       .attr("id", "centerBackgroundF")
       .attr("x", "0")
       .attr("y", "0")
@@ -71,14 +68,14 @@ var arc = d3.svg.arc()
       .attr("height", 1)
       .attr("patternUnits", "objectBoundingBox")
         .append("image") 
-          .attr("xlink:href", "icon_42253_f.svg")
-          .attr("x", 20)
-          .attr("y", 15)
-          .attr("width", 2*radius/4)
-          .attr("height", 2*radius/4);
+        .attr("xlink:href", "icon_42253_f.svg")
+        .attr("x", 20)
+        .attr("y", 15)
+        .attr("width", 2*radius/4)
+        .attr("height", 2*radius/4);
   
   // background male
-  svg.append("defs").append("pattern")
+svg.append("defs").append("pattern")
       .attr("id", "centerBackgroundM")
       .attr("x", "0")
       .attr("y", "0")
@@ -91,10 +88,18 @@ var arc = d3.svg.arc()
           .attr("y", 23)
           .attr("width", 2*radius/4)
           .attr("height", 2*radius/4);
+
 d3.json("geschlecht.json", function(error, root) {
   // Compute the initial layout on the entire tree to sum sizes.
   // Also compute the full name and fill color for each node,
   // and stash the children so they can be restored as we descend.
+  
+  var center = svg.append("circle")
+      .attr("r", radius / 3)
+      .style("fill","url(#centerBackground)")
+      .on("click", zoomOut);
+
+
   partition
       .value(function(d) { return d.value; })
       .nodes(root)
@@ -111,10 +116,12 @@ d3.json("geschlecht.json", function(error, root) {
       .children(function(d, depth) { return depth < 2 ? d._children : null; })
       .value(function(d) { return d.sum; });
   
+  /*
   var center = svg.append("circle")
       .attr("r", radius / 3)
       .style("fill","url(#centerBackground)")
       .on("click", zoomOut);
+*/
 
   var path = svg.selectAll("path")
       .data(partition.nodes(root).slice(1))
