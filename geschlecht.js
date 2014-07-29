@@ -12,7 +12,43 @@ var svg = d3.select(".content").append("svg")
     .attr("transform", "translate(" + (margin.left-70) + "," + (margin.top-25) + ")");
     //.attr("transform", "translate(" + (margin.left-40) + "," + (margin.top-50) + ")");
 
-  svg.append("defs").append("pattern")
+  
+
+var tip = d3.tip()
+  .attr("class", "d3-tip")
+  .offset([-3, 20])
+  .html( function(d){
+    if( d.name === "f" ){
+      return "<text>Frauen </br> Zum Hineinzoomen klicken</text>";
+    }else if( d.name === "m" ){
+      return "<text>M&auml;nner</br> Zum Hineinzoomen klicken</text>";
+    }else if( d.depth === 2 ){
+      return tip.hide(); //wie kann man das "richtig" lösen. das stimmt so nicht, produziert einen Fehler auf der Konsole, macht aber was ich will (tip erscheint nicht.)
+    }else{
+      return "<text><strong>"+d.name+":</br>"+d.partei+",</br>"+d.info+"</strong></text>";
+    }
+  });
+
+svg.call(tip);
+
+var partition = d3.layout.partition()
+    //.sort(function(a, b) { return d3.ascending(a.name, b.name); })
+    .size([2 * Math.PI, radius]);
+
+var arc = d3.svg.arc()
+    .startAngle( function(d){ return d.x; } )
+    .endAngle( function(d){ return d.x + d.dx - 0.01 / ( d.depth + 0.5 ); } )
+    .innerRadius( function(d){ return radius / 3 * d.depth; } )
+    .outerRadius( function(d){ return radius / ( 2 + d.depth ) * ( d.depth + 1 ) -1; } )
+
+/*
+var arc = d3.svg.arc()
+    .startAngle(function(d) { return d.x; })
+    .endAngle(function(d) { return d.x + d.dx - .01 / (d.depth + .5); })
+    .innerRadius(function(d) { return radius / 3 * d.depth; })
+    .outerRadius(function(d) { return radius / 3 * (d.depth + 1) - 1; });
+*/
+svg.append("defs").append("pattern")
       .attr("id", "centerBackground")
       .attr("x", "0")
       .attr("y", "0")
@@ -56,42 +92,6 @@ var svg = d3.select(".content").append("svg")
           .attr("y", 23)
           .attr("width", 2*radius/4)
           .attr("height", 2*radius/4);
-
-var tip = d3.tip()
-  .attr("class", "d3-tip")
-  .offset([-3, 20])
-  .html( function(d){
-    if( d.name === "f" ){
-      return "<text>Frauen </br> Zum Hineinzoomen klicken</text>";
-    }else if( d.name === "m" ){
-      return "<text>M&auml;nner</br> Zum Hineinzoomen klicken</text>";
-    }else if( d.depth === 2 ){
-      return tip.hide(); //wie kann man das "richtig" lösen. das stimmt so nicht, produziert einen Fehler auf der Konsole, macht aber was ich will (tip erscheint nicht.)
-    }else{
-      return "<text><strong>"+d.name+":</br>"+d.partei+",</br>"+d.info+"</strong></text>";
-    }
-  });
-
-svg.call(tip);
-
-var partition = d3.layout.partition()
-    //.sort(function(a, b) { return d3.ascending(a.name, b.name); })
-    .size([2 * Math.PI, radius]);
-
-var arc = d3.svg.arc()
-    .startAngle( function(d){ return d.x; } )
-    .endAngle( function(d){ return d.x + d.dx - 0.01 / ( d.depth + 0.5 ); } )
-    .innerRadius( function(d){ return radius / 3 * d.depth; } )
-    .outerRadius( function(d){ return radius / ( 2 + d.depth ) * ( d.depth + 1 ) -1; } )
-
-/*
-var arc = d3.svg.arc()
-    .startAngle(function(d) { return d.x; })
-    .endAngle(function(d) { return d.x + d.dx - .01 / (d.depth + .5); })
-    .innerRadius(function(d) { return radius / 3 * d.depth; })
-    .outerRadius(function(d) { return radius / 3 * (d.depth + 1) - 1; });
-*/
-
 d3.json("geschlecht.json", function(error, root) {
   // Compute the initial layout on the entire tree to sum sizes.
   // Also compute the full name and fill color for each node,
