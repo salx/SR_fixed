@@ -138,7 +138,7 @@ h3{
 	/*background-color: #dd2;*/
 	width: 280px;
 	min-height: 200px;
-	max-height: 320px;
+	max-height: 300px;
 	overflow: auto;
 	margin-top: 15px; /*TODO: set different margins for each browser*/
 	padding: 10px 18px; 
