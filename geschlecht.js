@@ -12,7 +12,20 @@ var svg = d3.select(".content").append("svg")
     .attr("transform", "translate(" + (margin.left-70) + "," + (margin.top-25) + ")");
     //.attr("transform", "translate(" + (margin.left-40) + "," + (margin.top-50) + ")");
 
-  
+svg.append("defs").append("pattern")
+      .attr("id", "centerBackground")
+      .attr("x", "0")
+      .attr("y", "0")
+      .attr("width", 1)
+      .attr("height", 1)
+      .attr("patternUnits", "objectBoundingBox")
+        .append("image") 
+          .attr("xlink:href", "icon_21902.svg")
+          //.attr("xlink:href", "icon_12568_both.svg")
+          .attr("x", 20)
+          .attr("y", 15)
+          .attr("width", 2*radius/4)
+          .attr("height", 2*radius/4);
 
 var tip = d3.tip()
   .attr("class", "d3-tip")
@@ -48,20 +61,6 @@ var arc = d3.svg.arc()
     .innerRadius(function(d) { return radius / 3 * d.depth; })
     .outerRadius(function(d) { return radius / 3 * (d.depth + 1) - 1; });
 */
-svg.append("defs").append("pattern")
-      .attr("id", "centerBackground")
-      .attr("x", "0")
-      .attr("y", "0")
-      .attr("width", 1)
-      .attr("height", 1)
-      .attr("patternUnits", "objectBoundingBox")
-        .append("image") 
-          .attr("xlink:href", "icon_21902.svg")
-          //.attr("xlink:href", "icon_12568_both.svg")
-          .attr("x", 20)
-          .attr("y", 15)
-          .attr("width", 2*radius/4)
-          .attr("height", 2*radius/4);
 
 //background female
     svg.append("defs").append("pattern")
